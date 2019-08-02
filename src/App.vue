@@ -1,22 +1,19 @@
 <template>
   <div id="app">
-    <div class="main">
-      <Viewport />
-      <Controls />
-    </div>
+    <Game />
   </div>
 </template>
 
 <script>
-import Viewport from "./components/Viewport.vue";
-import Controls from "./components/Controls.vue";
+import Game from './Game.vue';
+import Menu from './Menu.vue';
 
 export default {
-  name: "app",
+  name: 'app',
   components: {
-    Viewport,
-    Controls
-  }
+    Game,
+    Menu,
+  },
 };
 </script>
 
@@ -26,27 +23,15 @@ body {
   padding: 0;
 }
 
+@font-face {
+  font-family: "LCD Solid";
+  src: url("./assets/fonts/LCD_Solid.ttf") format("ttf");
+}
+
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: "LCD Solid", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-
-  display: flex;
-  flex-direction: row;
-
-  height: 100vh;
-  width: 100%;
-}
-
-.main {
-  background-color: blanchedalmond;
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-
-  padding: 1.75vh;
 }
 </style>

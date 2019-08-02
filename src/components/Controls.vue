@@ -1,16 +1,43 @@
 <template>
-  <div class="controls"></div>
+  <div class="controls" :style="getStyle()">
+    <h2>Lorem</h2>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
+      possimus voluptates deleniti assumenda cumque aperiam recusandae. Delectus
+      ut quam, illum voluptas quae rerum tenetur temporibus! Unde deserunt repellendus
+      exercitationem at.
+    </p>
+  </div>
 </template>
 
 <script>
-export default {};
+import { GameData, GameState } from '../main';
+
+export default {
+  methods: {
+    getStyle() {
+      return `background-image:url(${
+        GameData.backgrounds[GameState.background]
+      });`;
+    },
+  },
+};
 </script>
 
-<style>
+<style scoped>
 .controls {
-  width: 100%;
-  height: 100%;
+  height: 35vh;
+  z-index: 100;
+  padding: 2vh 2vw;
+}
 
-  background-color: crimson;
+h2 {
+  color: white;
+}
+
+p {
+  color: white;
+  font-family: "LCD Solid";
+  font-size: 1.5rem;
 }
 </style>
