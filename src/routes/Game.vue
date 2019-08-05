@@ -32,6 +32,9 @@ export default {
       this.$data.state = Object.assign(this.$data.state, GameData[++this.$data.index]);
     },
   },
+  mounted() {
+    this.next();
+  }
 };
 </script>
 
