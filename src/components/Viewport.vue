@@ -29,7 +29,8 @@ export default {
     encounters: Array,
   },
   methods: {
-    // FIXME
+    // DONT TOUCH THIS PLEASE
+    // I FORGOT HOW THIS WORKS
     getCharacterStyle(index, encounter = false) {
       return `${encounter ? 'right' : 'left'}:${index * offset}vw;z-index:${Math.floor(90 / (index + 1))}`;
     },
