@@ -1,6 +1,9 @@
 <template>
   <div class="controls">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus tenetur nulla nemo molestias quo aliquam placeat. Delectus atque obcaecati sit consequatur. Harum sint rem expedita ducimus, animi voluptatibus amet.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       Commodi doloribus tenetur nulla nemo molestias quo aliquam placeat.
+        Delectus atque obcaecati sit consequatur. Harum sint rem expedita ducimus,
+         animi voluptatibus amet.</p>
   </div>
 </template>
 
