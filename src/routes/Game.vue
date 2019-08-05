@@ -18,9 +18,9 @@ export default {
       state: {
         squad: [],
         encounters: [],
-        image: "",
-        dialogue: "",
-      }
+        image: '',
+        dialogue: '',
+      },
     };
   },
   components: {
@@ -30,7 +30,7 @@ export default {
   methods: {
     next() {
       this.$data.state = Object.assign(this.$data.state, GameData[++this.$data.index]);
-    }
+    },
   },
 };
 </script>

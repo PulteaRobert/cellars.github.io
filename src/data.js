@@ -15,6 +15,16 @@ export default [
   {
     squad: [dinosaur],
     encounters: [farmer2],
-    dialogue: 'rarw',
+    dialogue: 'im a fucking dinosaur',
+  },
+  {
+    squad: [dinosaur],
+    encounters: [farmer2],
+    dialogue: 'die bro',
+  },
+  {
+    squad: [dinosaur],
+    encounters: [],
+    dialogue: 'gg',
   },
 ];

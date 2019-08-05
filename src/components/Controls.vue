@@ -19,6 +19,10 @@ export default {
 
 <style scoped>
 
+p {
+  color: white;
+}
+
 .controls {
   width: 35vw;
 
