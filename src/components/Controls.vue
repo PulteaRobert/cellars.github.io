@@ -1,30 +1,50 @@
 <template>
   <div class="controls">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-       Commodi doloribus tenetur nulla nemo molestias quo aliquam placeat.
-        Delectus atque obcaecati sit consequatur. Harum sint rem expedita ducimus,
-         animi voluptatibus amet.</p>
+    <div class="image">
+
+    </div>
+    <p>
+      {{ dialogue }}
+    </p>
     <button @click="$emit('beep')">
       beep
     </button>
-    <button @click="$emit('boop')">
+    <button @click="$emit('boop');">
       boop
+    </button>
+    <button @click="$emit('remove')">
+      BAAP
     </button>
   </div>
 </template>
 
 <script>
 export default {
+  props: {
+    dialogue: String,
+  }
 };
 </script>
 
 <style scoped>
+.image {
+  
+}
+
 .controls {
-  width: 45vw;
+  width: 35vw;
 
   z-index: 100;
   padding: 2vh 2vw;
 
   background-color: paleturquoise;
 }
+
+
+@media only screen and (max-width: 1000px) {
+  .controls {
+    width: auto;
+  }
+}
+
 </style>

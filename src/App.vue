@@ -16,8 +16,7 @@ export default {
 
   body {
     margin: 0;
-    /* padding: 5vh 2.5vw ; */
-    /* background-color: greenyellow; */
+    padding: 0;
   }
 
   #app {

@@ -41,6 +41,7 @@ export default {
 <style scoped>
 
   .viewport {
+    width: 65vw;
     position: relative;
   }
 
