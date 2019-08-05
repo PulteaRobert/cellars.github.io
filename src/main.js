@@ -29,7 +29,6 @@ export const GameData = {
 Vue.config.productionTip = false;
 Vue.use(VueRouter);
 
-
 new Vue({
   router: new VueRouter({
     routes: [
