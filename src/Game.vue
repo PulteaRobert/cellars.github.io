@@ -1,10 +1,7 @@
 <template>
   <div class="game">
-    <div class="main">
       <Viewport />
       <Controls />
-    </div>
-    <div class="dialogue"></div>
   </div>
 </template>
 
@@ -25,24 +22,7 @@ export default {
   display: flex;
   flex-direction: row;
 
-  height: 100vh;
+  height: 90vh;
   width: 100%;
-}
-
-.main {
-  background-color: blanchedalmond;
-  width: 70vw;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.dialogue {
-  background-color: khaki;
-
-  z-index: 100;
-
-  width: 30vw;
 }
 </style>

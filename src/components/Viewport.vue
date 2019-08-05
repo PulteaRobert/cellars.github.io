@@ -67,7 +67,7 @@ export default {
 
 .image {
   width: 100%;
-  height: 70vh;
+  height: 100%;
 
   background-color: black;
 }
@@ -83,7 +83,7 @@ export default {
   width: 20vw;
   height: 70vh;
 
-  bottom: 15vh;
+  bottom: 0;
 }
 
 .encounter {
