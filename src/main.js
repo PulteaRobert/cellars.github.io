@@ -2,8 +2,8 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 import App from './App.vue';
-import Game from './Game.vue';
-import Menu from './Menu.vue';
+import Game from './routes/Game.vue';
+import Menu from './routes/Menu.vue';
 
 import background from './assets/image1.jpg';
 import character1 from './assets/character1.png';

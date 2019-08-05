@@ -20,33 +20,33 @@
 </template>
 
 <script>
-  import { GameState, GameData } from '../main';
+import { GameState, GameData } from '../main';
 
-  const offset = 7.5;
+const offset = 7.5;
 
-  export default {
-    data() {
-      return {
-        image: GameData.images[GameState.image],
-        characters: GameState.encounters,
-        encounters: GameState.characters,
-      };
+export default {
+  data() {
+    return {
+      image: GameData.images[GameState.image],
+      characters: GameState.encounters,
+      encounters: GameState.characters,
+    };
+  },
+  methods: {
+    getCharacterSrc(index) {
+      return GameData.characters[index];
     },
-    methods: {
-      getCharacterSrc(index) {
-        return GameData.characters[index];
-      },
 
-      // FIXME
-      getCharacterStyle(index, encounter = false) {
-        return `${encounter ? 'right' : 'left'}:${(encounter ? 30 : 0)
+    // FIXME
+    getCharacterStyle(index, encounter = false) {
+      return `${encounter ? 'right' : 'left'}:${(encounter ? 30 : 0)
           + index * offset}vw;z-index:${Math.floor(90 / (index + 1))}`;
-      },
-      addCharacter() {
-        this.characters.push(0);
-      },
     },
-  };
+    addCharacter() {
+      this.characters.push(0);
+    },
+  },
+};
 </script>
 
 <style scoped>

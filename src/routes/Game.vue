@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Viewport from './components/Viewport.vue';
-import Controls from './components/Controls.vue';
+import Viewport from '../components/Viewport.vue';
+import Controls from '../components/Controls.vue';
 
 export default {
   components: {
