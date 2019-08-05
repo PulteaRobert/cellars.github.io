@@ -1,19 +1,12 @@
 <template>
   <div id="app">
-    <Game />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Game from './Game.vue';
-import Menu from './Menu.vue';
-
 export default {
   name: 'app',
-  components: {
-    Game,
-    Menu,
-  },
 };
 </script>
 
