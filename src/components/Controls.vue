@@ -1,19 +1,10 @@
 <template>
   <div class="controls">
-    <div class="image">
-
-    </div>
     <p>
       {{ dialogue }}
     </p>
-    <button @click="$emit('beep')">
-      beep
-    </button>
-    <button @click="$emit('boop');">
-      boop
-    </button>
-    <button @click="$emit('remove')">
-      BAAP
+    <button @click="$emit('next')">
+      NEXT
     </button>
   </div>
 </template>
@@ -22,14 +13,11 @@
 export default {
   props: {
     dialogue: String,
-  }
+  },
 };
 </script>
 
 <style scoped>
-.image {
-  
-}
 
 .controls {
   width: 35vw;
@@ -37,7 +25,7 @@ export default {
   z-index: 100;
   padding: 2vh 2vw;
 
-  background-color: paleturquoise;
+  background-color: brown;
 }
 
 

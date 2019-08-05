@@ -6,7 +6,7 @@
 
       <transition-group tag="div" enter-active-class="animated slideInLeft"
         leave-active-class="animated slideOutLeft flipped">
-        <img v-for="(src, index) in characters" :key="src" :src="src"
+        <img v-for="(src, index) in squad" :key="src" :src="src"
           :style="getCharacterStyle(index)" class="character" />
       </transition-group>
 
@@ -25,7 +25,7 @@ const offset = 7.5;
 export default {
   props: {
     image: String,
-    characters: Array,
+    squad: Array,
     encounters: Array,
   },
   methods: {
