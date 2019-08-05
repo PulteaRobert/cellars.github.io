@@ -6,7 +6,6 @@
 
 <script>
 
-import HelloWorld from './components/HelloWorld.vue';
 import mainScreen from './components/mainScreen.vue';
 
 
