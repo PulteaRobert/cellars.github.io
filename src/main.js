@@ -1,25 +1,25 @@
 import Vue from 'vue';
 import App from './App.vue';
 
+import background from './assets/image1.jpg';
+import character1 from  './assets/character1.png';
+import character2 from './assets/character2.png';
+
 Vue.config.productionTip = false;
 
 export const GameState = {
   image: 0,
   characters: [],
   encounters: [],
-  background: 0,
 };
 
 export const GameData = {
   images: [
-    require('./assets/image1.jpg'),
+    background,
   ],
   characters: [
-    require('./assets/character1.png'),
-    require('./assets/character2.png'),
-  ],
-  backgrounds: [
-    require('./assets/bg1.png'),
+    character1,
+    character2,
   ],
 };
 

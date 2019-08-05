@@ -53,10 +53,10 @@ export default {
     // FIXME
     getCharacterStyle(index, encounter = false) {
       return `${encounter ? 'right' : 'left'}:${(encounter ? 30 : 0)
-        + index * offset}vw;z-index:${Math.floor(100 / (index + 1))}`;
+        + index * offset}vw;z-index:${Math.floor(90 / (index + 1))}`;
     },
     addCharacter() {
-      this.encounters.push(1);
+      this.characters.push(0);
     },
   },
 };

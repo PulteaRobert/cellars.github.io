@@ -1,5 +1,5 @@
 <template>
-  <div class="controls" :style="getStyle()">
+  <div class="controls">
     <h2>Lorem</h2>
     <p>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
@@ -11,16 +11,7 @@
 </template>
 
 <script>
-import { GameData, GameState } from '../main';
-
 export default {
-  methods: {
-    getStyle() {
-      return `background-image:url(${
-        GameData.backgrounds[GameState.background]
-      });`;
-    },
-  },
 };
 </script>
 
@@ -29,6 +20,8 @@ export default {
   height: 35vh;
   z-index: 100;
   padding: 2vh 2vw;
+
+  background-color: paleturquoise;
 }
 
 h2 {
