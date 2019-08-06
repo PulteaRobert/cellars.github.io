@@ -1,4 +1,8 @@
-<template></template>
+<template>
+  <div>
+    <button @click="attackHero">Fight!</button>
+  </div>
+</template>
 <script>
 export default {
   data() {
@@ -14,15 +18,19 @@ export default {
         attack: 30
       }
     };
-    methods: {
-      attack: () => {
-        this.$data.enemy.HP -= this.$data.hero.attack;
-        console.log(this.$data.enemy.HP);
-      };
+  },
+  methods: {
+    attackEnemy: function() {
+      this.$data.hero.HP -= this.$data.enemy.attack;
+      console.log("hero:" + this.$data.hero.HP);
+    },
+    attackHero: function() {
+      this.$data.enemy.HP -= this.$data.hero.attack;
+      console.log(this.$data.enemy.HP);
+      this.attackEnemy();
     }
   }
 };
 </script>
 <style>
 </style>
-

@@ -14,7 +14,7 @@ new Vue({
     routes: [
       { path: '/', component: Menu },
       { path: '/game', name: 'game', component: Game },
-      { path: '/combat', name: 'combat', component: Combat }
+      { path: '/combat', name: 'combat', component: Combat },
     ],
   }),
   render: h => h(App),
