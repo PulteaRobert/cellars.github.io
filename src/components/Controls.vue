@@ -1,7 +1,7 @@
 <template>
   <div class="controls">
     <p>
-      {{ dialogue }}
+      {{ getDialogue() }}
     </p>
     <button @click="$emit('next')">
       NEXT
@@ -13,7 +13,13 @@
 export default {
   props: {
     dialogue: String,
+    username: String,
   },
+  methods: {
+    getDialogue() {
+      return this.dialogue.replace("$username", this.username);
+    }
+  }
 };
 </script>
 

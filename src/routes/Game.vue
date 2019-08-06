@@ -1,7 +1,7 @@
 <template>
   <div class="game">
       <Viewport :image="state.image" :squad="state.squad" :encounters="state.encounters" />
-      <Controls :dialogue="state.dialogue" @next="next"/>
+      <Controls :dialogue="state.dialogue" :username="username" @next="next"/>
   </div>
 </template>
 
@@ -10,31 +10,27 @@ import Viewport from '../components/Viewport.vue';
 import Controls from '../components/Controls.vue';
 
 import GameData from '../data';
+import { getSave, setSave } from '../save';
 
 export default {
-  data() {
-    return {
-      index: -1,
-      state: {
-        squad: [],
-        encounters: [],
-        image: '',
-        dialogue: '',
-      },
-    };
-  },
+  data: getSave,
   components: {
     Viewport,
     Controls,
   },
   methods: {
     next() {
-      this.$data.state = Object.assign(this.$data.state, GameData[++this.$data.index]);
+      this.$data.index += 1;
+      this.$data.state = Object.assign(this.$data.state, GameData[this.$data.index]);
+      setSave(this.$data);
     },
   },
+  created() {
+    this.$data.username = this.$route.params.username;
+  },
   mounted() {
-    this.next();
-  }
+    this.$data.state = Object.assign(this.$data.state, GameData[this.$data.index]);
+  },
 };
 </script>
 

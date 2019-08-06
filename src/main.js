@@ -12,7 +12,7 @@ new Vue({
   router: new VueRouter({
     routes: [
       { path: '/', component: Menu },
-      { path: '/game', component: Game },
+      { path: '/game', name: 'game', component: Game },
     ],
   }),
   render: h => h(App),

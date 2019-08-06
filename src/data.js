@@ -10,7 +10,7 @@ export default [
   },
   {
     squad: [farmer],
-    dialogue: 'bro',
+    dialogue: 'hello my brother $username',
   },
   {
     squad: [dinosaur],
