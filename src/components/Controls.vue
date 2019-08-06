@@ -17,9 +17,9 @@ export default {
   },
   methods: {
     getDialogue() {
-      return this.dialogue.replace("$username", this.username);
-    }
-  }
+      return this.dialogue.replace('$username', this.username);
+    },
+  },
 };
 </script>
 
