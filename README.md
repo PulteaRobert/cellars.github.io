@@ -1,4 +1,4 @@
-# beciuri-si-strigoi
+# beciuri-si-strigoi [master]
 
 ## Project setup
 ```
