@@ -10,19 +10,11 @@ export default {
   props: {
     dialogue: String,
   }
-  hero:{
-    HP: 600,
-    maxHP: 1200,
-    Fizic: 10,
-    Social: 10
-  }
 };
 </script>
 
 <style scoped>
-.image {
-  
-}
+
 
 .controls {
   width: 35vw;
