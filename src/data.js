@@ -5,6 +5,7 @@ import dinosaur from './assets/char3.jpg';
 import holland from './assets/bg1.png';
 
 export default [
+  
   {
     image: holland,
   },
