@@ -1,9 +1,9 @@
 <template>
     <div class="backgroundContainer" >
-        <img class="image" src="../assets/backgroundImage.png" alt=""> 
+        <!-- <img class="image" src="../assets/backgroundImage.png" alt="">  -->
             <div class="view">
-
-                <conversationScreen />
+                
+               <menu2></menu2>
 
             </div>
             <div class="ctrlMenue">
@@ -19,11 +19,13 @@
 <script>
 
 import conversationScreen from './conversationScreen.vue';
+import menu2 from './menu2.vue';
 
 export default {
-  name: 'view',
+  name: 'viewmen',
   components: {
-    conversationScreen
+    conversationScreen,
+    menu2,
   },
 };
 </script>
@@ -37,7 +39,6 @@ body{
 .view{
     margin: 0;
     position: fixed;
-    background-color: blue;
     width: 95%;
     height: 83%;
     left: 50%;
@@ -52,6 +53,9 @@ body{
     right: 0%;
     bottom: 0;
     margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(190, 181, 181);
 }
 
 .soundIcon{
