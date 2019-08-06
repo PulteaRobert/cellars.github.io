@@ -23,12 +23,12 @@ export default [
       },
       {
         text: 'whip the salves',
-        flag: 'f',
+        flag: ['f', 'g'],
       },
     ],
   },
   {
-    if: ['f'],
+    if: ['f', 'h'],
     squad: [dinosaur],
     encounters: [farmer2],
     dialogue: 'that racist bro,die',

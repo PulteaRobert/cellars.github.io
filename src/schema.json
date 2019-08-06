@@ -1,0 +1,19 @@
+{
+    "$schema": {
+        "data": [
+            {
+                "image": "string",
+                "if": "Array(string)",
+                "squad": "Array(string)",
+                "encounters": "Array(string)",
+                "dialogue": "string",
+                "choices": [
+                    {
+                        "text": "string",
+                        "flag": "Array(string) | string"
+                    }
+                ]
+            }
+        ]
+    }
+}
