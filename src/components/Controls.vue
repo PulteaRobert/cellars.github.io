@@ -24,9 +24,10 @@ p {
 }
 
 #next{
-  position: absolute;
-  height: 3vmax;
-  width: 10vmax;
+  position: fixed;
+  left: 1250px;
+  height: 50px;
+  width: 150px;
   margin-top: 650px;
   margin-left: 125px;
 
