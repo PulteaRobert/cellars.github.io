@@ -53,8 +53,10 @@ export default {
     // DONT TOUCH THIS PLEASE
     // I FORGOT HOW THIS WORKS
     getCharacterStyle(index, encounter = false) {
-      return `${encounter ? 'right' : 'left'}:${index
-        * offset}vw;z-index:${Math.floor(90 / (index + 1))}`;
+      return {
+        [encounter ? 'right' : 'left']: `${index * offset + offset / 4}vw`,
+        zIndex: `${Math.floor(90 / (index + 1))}`,
+      };
     },
   },
 };

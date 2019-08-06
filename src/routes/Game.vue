@@ -1,7 +1,9 @@
 <template>
   <div class="game">
-    <Viewport />
-    <Controls />
+    <Viewport @die="showControls = true" />
+    <transition name="controls-animation" enter-active-class="animated slideInRight">
+      <Controls v-if="showControls" />
+    </transition>
   </div>
 </template>
 
@@ -17,6 +19,11 @@ export default {
   mounted() {
     this.$store.commit('reloadScreen');
   },
+  data() {
+    return {
+      showControls: true,
+    };
+  },
 };
 </script>
 
@@ -24,7 +31,11 @@ export default {
 .game {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+
   height: 100vh;
+
+  background-color: black;
 }
 
 @media only screen and (max-width: 1000px) {
