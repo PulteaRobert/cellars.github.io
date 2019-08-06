@@ -10,20 +10,31 @@
           class="choice-btn"
           v-for="(choice, i) in choices"
           :key="choice.text"
-          @click="$emit('next', i + 1)"
+          @click="click(i)"
         >{{ choice.text }}</button>
       </div>
-      <button v-else class="next-btn" @click="$emit('next')">NEXT</button>
+      <button v-else class="next-btn" @click="click(null)">NEXT</button>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: {
-    dialogue: String,
-    choices: Array,
-    speaker: String,
+  computed: {
+    speaker() {
+      return this.$store.state.game.speaker;
+    },
+    dialogue() {
+      return this.$store.state.game.dialogue;
+    },
+    choices() {
+      return this.$store.state.game.choices;
+    },
+  },
+  methods: {
+    click(choiceIndex) {
+      this.$store.commit('nextScreen', choiceIndex);
+    },
   },
 };
 </script>

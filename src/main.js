@@ -1,19 +1,14 @@
 import Vue from 'vue';
-import VueRouter from 'vue-router';
 
 import App from './App.vue';
-import Game from './routes/Game.vue';
-import Menu from './routes/Menu.vue';
+
+import store from './store';
+import router from './router';
 
 Vue.config.productionTip = false;
-Vue.use(VueRouter);
 
 new Vue({
-  router: new VueRouter({
-    routes: [
-      { path: '/', component: Menu },
-      { path: '/game', component: Game },
-    ],
-  }),
-  render: h => h(App),
+  router,
+  store,
+  render: appRender => appRender(App),
 }).$mount('#app');
