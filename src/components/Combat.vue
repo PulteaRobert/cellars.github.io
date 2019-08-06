@@ -1,10 +1,19 @@
 <template>
   <div class="controls">
+    <div class="image">
+
+    </div>
     <p>
       {{ dialogue }}
     </p>
-    <button id="next" @click="$emit('next')">
-      NEXT
+    <button @click="$emit('beep')">
+      beep
+    </button>
+    <button @click="$emit('boop');">
+      boop
+    </button>
+    <button @click="$emit('remove')">
+      BAAP
     </button>
   </div>
 </template>
@@ -13,23 +22,13 @@
 export default {
   props: {
     dialogue: String,
-  },
+  }
 };
 </script>
 
 <style scoped>
-
-p {
-  color: white;
-}
-
-#next{
-  position: absolute;
-  height: 3vmax;
-  width: 10vmax;
-  margin-top: 650px;
-  margin-left: 125px;
-
+.image {
+  
 }
 
 .controls {
@@ -38,7 +37,7 @@ p {
   z-index: 100;
   padding: 2vh 2vw;
 
-  background-color: brown;
+  background-color: paleturquoise;
 }
 
 
