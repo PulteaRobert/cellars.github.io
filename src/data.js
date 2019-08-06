@@ -16,14 +16,30 @@ export default [
     squad: [dinosaur],
     encounters: [farmer2],
     dialogue: 'im a fucking dinosaur',
+    choices: [
+      {
+        text: 'no',
+        flag: 'flagg',
+      },
+      {
+        text: 'whip the salves',
+        flag: 'f',
+      },
+    ],
   },
   {
+    if: ['f'],
     squad: [dinosaur],
     encounters: [farmer2],
-    dialogue: 'die bro',
+    dialogue: 'that racist bro,die',
   },
   {
+    if: ['flagg'],
     squad: [dinosaur],
+    encounters: [farmer2],
+    dialogue: 'yes',
+  },
+  {
     encounters: [],
     dialogue: 'gg',
   },
