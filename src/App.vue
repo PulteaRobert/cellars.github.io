@@ -12,7 +12,7 @@ import mainScreen from './components/mainScreen.vue';
 export default {
   name: 'app',
   components: {
-    mainScreen
+    mainScreen,
   },
 };
 </script>

@@ -3,7 +3,7 @@
         <!-- <img class="image" src="../assets/backgroundImage.png" alt="">  -->
             <div class="view">
                 
-               <menu2></menu2>
+               <conversationScreen />
 
             </div>
             <div class="ctrlMenue">

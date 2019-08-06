@@ -3,9 +3,11 @@
         <div class="glitchyImage">
             <img class="image" src="../assets/glitchyImage.gif" alt=""> 
         </div>
-        <div class="playText">
-            <p class="play">Play</p>
-        </div>
+        <form>
+            <div class="playText">
+                <input type="submit" value="Play" class="btn">
+            </div>
+        </form>
     </div>
 </template>
 
@@ -41,7 +43,7 @@ body{
     object-fit:cover;
 }
 
-.play{
+.btn{
     position: absolute;
     top: 50%;
     left: 50%;
