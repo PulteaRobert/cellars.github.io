@@ -2,19 +2,6 @@
   <div class="controls">
     <div class="image">
 
-    </div>
-    <p>
-      {{ dialogue }}
-    </p>
-    <button @click="$emit('beep')">
-      beep
-    </button>
-    <button @click="$emit('boop');">
-      boop
-    </button>
-    <button @click="$emit('remove')">
-      BAAP
-    </button>
   </div>
 </template>
 
@@ -22,6 +9,12 @@
 export default {
   props: {
     dialogue: String,
+  }
+  hero:{
+    HP: 600,
+    maxHP: 1200,
+    Fizic: 10,
+    Social: 10
   }
 };
 </script>
