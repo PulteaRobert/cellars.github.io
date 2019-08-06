@@ -20,7 +20,7 @@
 </template>
 
 <script>
-const offset = 7.5;
+const offset = 5.5;
 
 export default {
   props: {
