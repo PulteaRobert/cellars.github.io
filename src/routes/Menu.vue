@@ -1,7 +1,7 @@
 <template>
   <div id="menu">
     <h1>GAME</h1>
-    <input class="input" type="text" v-model="username" placeholder="`Name" maxlength="15" />
+    <input class="input" type="text" v-model="username" placeholder="Name" maxlength="15" />
     <button class="input" @click="play">PLAY</button>
   </div>
 </template>
