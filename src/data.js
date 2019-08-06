@@ -10,11 +10,13 @@ export default [
   },
   {
     squad: [farmer],
+    speaker: 'famer',
     dialogue: 'bro',
   },
   {
     squad: [dinosaur],
     encounters: [farmer2],
+    speaker: 'fucking dinosaur',
     dialogue: 'im a fucking dinosaur',
     choices: [
       {
@@ -23,12 +25,12 @@ export default [
       },
       {
         text: 'whip the salves',
-        flag: ['f', 'g'],
+        flag: ['f'],
       },
     ],
   },
   {
-    if: ['f', 'h'],
+    if: ['f'],
     squad: [dinosaur],
     encounters: [farmer2],
     dialogue: 'that racist bro,die',
