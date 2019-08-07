@@ -74,4 +74,16 @@ export default {
   padding: 10px;
   font-size: 2rem;
 }
+
+.choices {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+
+.choice-btn {
+  font-size: 1.5rem;
+}
 </style>

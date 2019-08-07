@@ -1,19 +1,24 @@
 {
-    "$schema": {
-        "data": [
-            {
-                "image": "string",
-                "if": "Array(string)",
-                "squad": "Array(string)",
-                "encounters": "Array(string)",
-                "dialogue": "string",
-                "choices": [
-                    {
-                        "text": "string",
-                        "flag": "Array(string) | string"
-                    }
-                ]
-            }
+  "$schema": {
+    "data": [
+      {
+        "image": "string",
+        "if": "Array(string)",
+        "squad": "Array(string)",
+        "encounters": "Array(string)",
+        "dialogue": "string",
+        "choices": [
+          {
+            "text": "string",
+            "flags": [
+              {
+                "flag": "string",
+                "chance": "float"
+              }
+            ]
+          }
         ]
-    }
+      }
+    ]
+  }
 }

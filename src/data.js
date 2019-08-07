@@ -4,11 +4,12 @@ import gift from './assets/gift.png';
 
 import police from './assets/police.png';
 
-import bg from './assets/bg.jpg';
+import inside from './assets/bg.jpg';
+import outside from './assets/outside.jpeg';
 
 export default [
   {
-    image: bg,
+    image: inside,
   },
   {
     squad: [maf1],
@@ -61,17 +62,17 @@ export default [
     choices: [
       {
         text: 'RUN!',
-        flags: [
-          'run',
-          {
-            flag: 'success',
-            chance: 0.5,
-          },
-        ],
+        flags: 'run',
       },
       {
         text: 'Hide',
-        flags: 'hide',
+        flags: [
+          'hide',
+          {
+            flag: 'success',
+            chance: 0.2,
+          },
+        ],
       },
     ],
   },
@@ -152,8 +153,26 @@ export default [
     dialogue: '......',
   },
   {
-    if: ['hide'],
+    if: ['hide', 'success'],
     dialogue: 'wtf santa lives here',
+  },
+  {
+    if: ['hide', '!success'],
+    dialogue: 'you know i can see you right?',
+  },
+  {
+    if: ['run'],
+    image: outside,
+    squad: [maf1],
+    encounters: [maf2],
+    speaker: 'mafia man',
+    dialogue: 'we escaped',
+  },
+  {
+    if: ['run'],
+    squad: [police],
+    encounters: [maf1, maf2],
+    dialogue: 'nvm',
   },
   {
     squad: [],
