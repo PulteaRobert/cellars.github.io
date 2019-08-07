@@ -1,7 +1,9 @@
 <template>
   <div id="menu">
-    <h1>GAME</h1>
-    <router-link to="/game">pley</router-link>
+    <h1>Cellers and Newts</h1>
+    <div>
+      <router-link id="play-btn" to="/game">Play</router-link>
+    </div>
   </div>
 </template>
 
@@ -12,5 +14,8 @@ export default {};
 <style scoped>
 #menu {
   font-size: 3rem;
+}
+#play-btn {
+  
 }
 </style>
