@@ -21,6 +21,10 @@ export default new Vuex.Store({
   },
   mutations: {
     nextScreen(state, choiceIndex) {
+      if (state.index === data.length - 1) {
+        return;
+      }
+
       if (choiceIndex !== null) {
         const choice = state.game.choices[choiceIndex];
 
