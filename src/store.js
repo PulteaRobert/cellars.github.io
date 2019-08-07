@@ -26,7 +26,7 @@ export default new Vuex.Store({
 
         if (choice.flags instanceof Array) {
           /* eslint-disable */
-          for (const flag of choice.flag) {
+          for (const flag of choice.flags) {
             if (typeof flag === 'string') {
               state.game.flags.push(flag);
             } else if (typeof flag === 'object') {
@@ -39,7 +39,7 @@ export default new Vuex.Store({
         }
 
         if (typeof choice.flags === 'string') {
-          state.game.flags.push(choice.flag);
+          state.game.flags.push(choice.flags);
         }
 
         state.game.choices.length = 0;
