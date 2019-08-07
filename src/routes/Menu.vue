@@ -13,18 +13,18 @@ export default {};
 
 <style scoped>
 #menu {
-  font-size: 8rem;
+  font-size: 8vh;
   color: #68ff3a;
 }
 
 #play-btn {
-  font-size: 10rem;
+  font-size: 10vh;
   color: #fdba00;
   text-decoration: none;
   position: absolute;
   bottom: 5vh;
   transform: translate(-50%);
-  text-shadow: 20px 20px black;
+  text-shadow: 1vh 1vh black;
 }
 
 #play-btn:hover {
