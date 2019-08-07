@@ -1,0 +1,179 @@
+scena 1
+background appears
+mr. engls appears: no god, pliz no!
+pistolar appears: *heeh*
+
+choices appear: 
+RUN!
+protecc mr. engls
+distract with a noise (soundefect)
+
+
+if RUN! 
+roll dice and add body stat
+ 
+if roll is 1 or 2 
+[fail] 
+
+if roll is 2 or 3
+[mix success] you step on a sqirell that blows an airhorn
+salmendr shots in your direction
+
+if roll is higher than 4
+[full success] get safely to the settlement
+get to scene 2
+
+
+{
+if its [mix success]
+you roll the dice and add body stat
+
+if roll 1 or 2
+ [fail] you get shot
+
+if roll 3 or 4
+[mix success] get wounded but you manage to ge to the settlement and alert everyone
+
+if roll higher than 4
+[full success] dodge the bullet and get safely to the settlement
+
+if [full success] get to scene 2
+
+if [mix success] get to "get that bastardo"
+
+if [fail] get to "[fail] you are salmander`s prisoner"
+
+}
+
+
+if protecc mr. engls
+
+choices:
+a)grab a sharp stone and aim at the head
+
+b)grab a brush and put a little makeup
+
+c)stop right there you criminal scum!
+
+d)attacc
+
+if a) roll dice and add body stat
+
+{if roll 1 or 2 
+[fail] get salmendr`s atention get to "salmendr sees you"
+
+if roll 3 or 4
+[mix success] you hit salmendr, but mr. engls gets wounded
+
+if roll higher than 4
+[full success] you kill salmendr and mr. engls survives
+
+{{if [mix success] following choices appear
+a.a)take both salmendr and mr. engls to settlement
+
+a.b)take mr. engls to the settlement and kill the salmendr
+
+if a.a) get to "you catch salmendr with the frogs"
+
+if a.b) get to "talk with mr. engls"}}
+
+{{if [full success] get to "talk with mr. engls"}}
+
+{if b) or c) each character says: ..............
+ 
+and the following choices appear:
+ 
+b.a) why`d you leave the keys upon the table?
+
+b.b) you violated the law!}
+
+{{if b.a) get to "dialog with salmendr"}}
+
+{{if b.b) roll dice and add communication stat
+
+if roll 1 or 2
+[fail] both mr. engls and you get shot
+ 
+if roll 3 or 4
+[mix success] salmendr gets hearth attack and dies, mr. engls gets shot in the head 
+
+if roll higher than 4 
+[full success] salmendr obeys and you three get to the settlement
+
+{if [fail] get to "[fail] you are salmander`s prisoner"
+
+if [mix success] get to scene 3
+
+if [full success] get to "[fail] get drunk with the frogs"}
+
+{if d) following choices appear:
+
+d.a)yeet his face off
+d.b)bitchslap
+d.c)bite his toe
+d.d)kick the balls
+d.e)spit in his mouth
+d.f)reeeeeee his guts out
+d.g)swear the soul out of him
+
+all the choices from above lead to the same thing:
+ 
+HA HA!
+
+roll dice and add communication stat
+
+{if roll 1 or 2
+[fail] you embarrass yourself and mr. engls gets shot
+
+if roll 3 or 4
+[mix success] get salmendrs attention and prevent him from shooting mr. engls
+
+if roll higher than 4
+[full success] you make salmendr cry, he drops the gun down}
+
+{if [fail] get to "[fail] you are salmander`s prisoner"
+
+if [mix success] get to "salmendr sees you"
+
+if [full success] get to "talking with salmendr"}
+
+
+if distract with a noise (soundefect)
+
+the following choices appear:
+
+aaa) i`ll make you an offer you can`t refuse
+
+bbb)...if you like pina colladas 
+
+ccc) what is love?
+
+{if aaa) the godfather theme starts playing
+
+if bbb) the pina colladas song starts playing
+
+if ccc) what is love starts playing}
+
+all choices from above get you to "salmendr sees you" and add 2 to your roll
+
+if "salmendr sees you" roll and add communication stat 
+
+{if roll 1 or 2
+ get to [fail] both mr. engls and you get shot
+
+if roll 3 or 4
+[mix success]mr. engls gets shot, but salmendr appears to be friendly
+
+if roll higher than 4
+[full success]the shot misses mr. engls and salmendr considers you a friend}
+
+{if [mix success] get to "talking with salmendr"
+
+if [full success] get to "talking with salmendr"}
+
+
+sdfg
+
+
+ 
+
