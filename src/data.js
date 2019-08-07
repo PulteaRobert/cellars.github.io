@@ -61,17 +61,17 @@ export default [
     choices: [
       {
         text: 'RUN!',
-        flags: [
-          'run',
-          {
-            flag: 'success',
-            chance: 0.5,
-          },
-        ],
+        flags: 'run',
       },
       {
         text: 'Hide',
-        flags: 'hide',
+        flags: [
+          'hide',
+          {
+            flag: 'success',
+            chance: 0.2,
+          },
+        ],
       },
     ],
   },
@@ -152,8 +152,12 @@ export default [
     dialogue: '......',
   },
   {
-    if: ['hide'],
+    if: ['hide', 'success'],
     dialogue: 'wtf santa lives here',
+  },
+  {
+    if: ['hide', '!success'],
+    dialogue: 'you know i can see you right?',
   },
   {
     squad: [],
