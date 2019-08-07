@@ -21,7 +21,7 @@ export default {
   },
   data() {
     return {
-      showControls: true,
+      showControls: false,
     };
   },
 };
@@ -35,7 +35,7 @@ export default {
 
   height: 100vh;
 
-  background-color: black;
+  background-color: #28023c;
 }
 
 @media only screen and (max-width: 1000px) {

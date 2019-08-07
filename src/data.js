@@ -4,7 +4,7 @@ import gift from './assets/gift.png';
 
 import police from './assets/police.png';
 
-import inside from './assets/bg.jpg';
+import inside from './assets/forest.pixel.prple.jpg';
 import outside from './assets/outside.jpeg';
 
 export default [
