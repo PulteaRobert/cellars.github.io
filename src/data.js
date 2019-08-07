@@ -16,7 +16,6 @@ export default [
     dialogue: 'where is ricardio?? he is late',
   },
   {
-    squad: [maf1],
     encounters: [maf2],
     speaker: 'ricardio',
     dialogue: 'i am',
@@ -62,11 +61,17 @@ export default [
     choices: [
       {
         text: 'RUN!',
-        flag: 'run',
+        flags: [
+          'run',
+          {
+            flag: 'success',
+            chance: 0.5,
+          },
+        ],
       },
       {
         text: 'Hide',
-        flag: 'hide',
+        flags: 'hide',
       },
     ],
   },
@@ -126,7 +131,8 @@ export default [
   },
   {
     if: ['hide'],
-    dialogue: 'we shall hide behind that chrismas gift box full of ilicit drugs! it will be inconspicuous!!',
+    dialogue:
+      'we shall hide behind that chrismas gift box full of ilicit drugs! it will be inconspicuous!!',
   },
   {
     if: ['hide'],

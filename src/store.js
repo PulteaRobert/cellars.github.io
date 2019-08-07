@@ -24,15 +24,21 @@ export default new Vuex.Store({
       if (choiceIndex !== null) {
         const choice = state.game.choices[choiceIndex];
 
-        if (choice.flag instanceof Array) {
+        if (choice.flags instanceof Array) {
           /* eslint-disable */
           for (const flag of choice.flag) {
-            state.game.flags.push(flag);
+            if (typeof flag === 'string') {
+              state.game.flags.push(flag);
+            } else if (typeof flag === 'object') {
+              if (Math.random() < flag.chance) {
+                state.game.flags.push(flag.flag);
+              }
+            }
           }
           /* eslint-enable */
         }
 
-        if (typeof choice.flag === 'string') {
+        if (typeof choice.flags === 'string') {
           state.game.flags.push(choice.flag);
         }
 
@@ -52,7 +58,5 @@ export default new Vuex.Store({
       state.game = Object.assign(state.game, data[state.index]);
     },
   },
-  actions: {
-
-  },
+  actions: {},
 });

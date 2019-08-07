@@ -1,8 +1,8 @@
 <template>
-    <div id="menu">
-        <h1>GAME</h1>
-        <router-link to="/game">pley</router-link>
-    </div>
+  <div id="menu">
+    <h1>GAME</h1>
+    <router-link to="/game">pley</router-link>
+  </div>
 </template>
 
 <script>
@@ -11,6 +11,6 @@ export default {};
 
 <style scoped>
 #menu {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 </style>
