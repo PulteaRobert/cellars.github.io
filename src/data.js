@@ -30,6 +30,7 @@ export default [
   {
     speaker: 'mafia man',
     dialogue: 'did you bring it?',
+    thoughts: true,
   },
   {
     speaker: 'ricardio',
@@ -163,6 +164,11 @@ export default [
   {
     if: ['run'],
     image: outside,
+    speaker: 'outside',
+    dialogue: '',
+  },
+  {
+    if: ['run'],
     squad: [maf1],
     encounters: [maf2],
     speaker: 'mafia man',

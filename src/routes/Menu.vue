@@ -15,23 +15,22 @@ export default {};
 <style scoped>
 #title {
   font-size: 8vh;
-  color: #68ff3a;
+  color: rgb(138, 0, 236);
 }
 
 .btn {
   position: absolute;
-  color: #fdba00;
+  color: rgb(14, 164, 212);
   text-decoration: none;
   text-shadow: 1vh 1vh black;
 }
 
 .btn:hover {
-  color: #c08d00;
+  color: rgb(12, 127, 165);
 }
 
 .btn:focus,
 .btn:active {
-  color: #c08d00;
   text-shadow: 6px 6px black;
 }
 
