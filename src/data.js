@@ -38,7 +38,7 @@ export default [
   },
   {
     speaker: 'christmas box',
-    dialogue: 'i am full of ilicit drugs!',
+    dialogue: 'i am full of illicit drugs!',
   },
   {
     speaker: 'police car alarm',
@@ -133,7 +133,7 @@ export default [
   {
     if: ['hide'],
     dialogue:
-      'we shall hide behind that chrismas gift box full of ilicit drugs! it will be inconspicuous!!',
+      'we shall hide behind that chrismas gift box full of illicit drugs! it will be inconspicuous!!',
   },
   {
     if: ['hide'],

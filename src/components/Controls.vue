@@ -61,12 +61,12 @@ export default {
   color: white;
 
   height: 70vh;
-  background-color: crimson;
+  background-color: yellowgreen;
 }
 
 .buttons {
   height: 30vh;
-  background-color: blue;
+  background-color: yellow;
 }
 
 .next-btn {
