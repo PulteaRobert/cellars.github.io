@@ -27,7 +27,7 @@ export default {};
 p {
   margin-top: 10vh;
   color: white;
-  font-size: 2rem;
+  font-size: 2vh;
 }
 
 #title {
