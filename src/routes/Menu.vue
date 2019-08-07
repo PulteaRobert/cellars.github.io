@@ -1,8 +1,9 @@
 <template>
   <div id="bg">
     <div>
-      <h1 id="menu">Cellars and Newts</h1>
-      <router-link id="play-btn" to="/game">Play</router-link>
+      <h1 id="title">Cellars and Newts</h1>
+      <router-link id="play-btn" class="btn" to="game">Play</router-link>
+      <router-link id="credits-btn" class="btn" to="credits">©</router-link>
     </div>
   </div>
 </template>
@@ -12,30 +13,49 @@ export default {};
 </script>
 
 <style scoped>
-#menu {
+#title {
   font-size: 8vh;
   color: #68ff3a;
 }
 
-#play-btn {
-  font-size: 10vh;
+.btn {
+  position: absolute;
   color: #fdba00;
   text-decoration: none;
-  position: absolute;
-  bottom: 5vh;
-  transform: translate(-50%);
   text-shadow: 1vh 1vh black;
 }
 
-#play-btn:hover {
+.btn:hover {
   color: #c08d00;
 }
 
-#play-btn:focus,
-#play-btn:active {
+.btn:focus,
+.btn:active {
   color: #c08d00;
   text-shadow: 6px 6px black;
+}
+
+#play-btn {
+  font-size: 10vh;
+
+  transform: translate(-50%);
+
+  bottom: 5vh;
+}
+
+#play-btn:active {
   transform: translate(-49%, 2%);
+}
+
+#credits-btn {
+  font-size: 8vh;
+
+  bottom: 5vh;
+  right: 3vw;
+}
+
+#credits-btn {
+  transform: translate(-49%, -2%);
 }
 
 #bg {
