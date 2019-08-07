@@ -1,7 +1,7 @@
 <template>
-  <div id="menu">
-    <h1>Cellers and Newts</h1>
+  <div id="bg">
     <div>
+      <h1 id="menu">Cellars and Newts</h1>
       <router-link id="play-btn" to="/game">Play</router-link>
     </div>
   </div>
@@ -13,9 +13,39 @@ export default {};
 
 <style scoped>
 #menu {
-  font-size: 3rem;
+  font-size: 8rem;
+  color: #68ff3a;
 }
+
 #play-btn {
-  
+  font-size: 10rem;
+  color: #fdba00;
+  text-decoration: none;
+  position: absolute;
+  bottom: 5vh;
+  transform: translate(-50%);
+  text-shadow: 20px 20px black;
+}
+
+#play-btn:hover {
+  color: #c08d00;
+}
+
+#play-btn:focus,
+#play-btn:active {
+  color: #c08d00;
+  text-shadow: 6px 6px black;
+  transform: translate(-49%, 2%);
+}
+
+#bg {
+  background-image: url("../assets/swamp.png");
+  background-size: cover;
+  position: fixed;
+  background-repeat: no-repeat;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 </style>
