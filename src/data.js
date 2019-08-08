@@ -80,6 +80,7 @@ export default [
   },
   {
     if: ['protecc1', 'protecc1-succes'],
+    squad: [mrEngls],
     encounters: [salvede],
   },
 ];
