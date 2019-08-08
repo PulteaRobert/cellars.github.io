@@ -29,7 +29,7 @@ export default [
         flags: [
           'run',
           {
-            flag: 'success',
+            flags: 'run-success',
             chance: 1,
           },
         ],
@@ -45,19 +45,21 @@ export default [
     ],
   },
   {
-    if: ['run', 'success'],
+    if: ['run', 'run-success'],
     squad: [],
     encounters: [mrEngls],
+    speaker: '',
+    dialogue: '',
     // sfx: runInContext;?
   },
   {
-    if: ['run', 'success'],
+    if: ['run', 'run-success'],
     squad: [],
     speaker: 'Mr. Engls',
     dialogue: 'Phew, I managed to lose him!',
   },
   {
-    if: ['run', 'success'],
+    if: ['run', 'run-success'],
     dialogue: 'I can see the settlement!',
   },
 ];
