@@ -1,10 +1,12 @@
 import utils from '@/utils';
 
-import mrEngls from '@/assets/mr.engls.png';
-import bg from '@/assets/scene1.gif';
-import pistolar from '@/assets/pistolar.salmendr.png';
-import sax from '@/assets/sound/SaxSeal.mp3';
-import blackbg from '@/assets/Blackbg.jpg';
+import bgForest from '@/assets/scene1.gif';
+import bgBlack from '@/assets/Blackbg.jpg';
+
+import charMrEngls from '@/assets/mr.engls.png';
+import charSalamandr from '@/assets/pistolar.salmendr.png';
+
+import sfxSax from '@/assets/sound/SaxSeal.mp3';
 
 import choiceRun from './choices/run';
 import choiceProtect from './choices/protect';
@@ -12,17 +14,17 @@ import choiceDistract from './choices/distract';
 
 export default [
   {
-    image: bg,
+    image: bgForest,
     color: utils.rgb(138, 0, 236),
   },
   {
-    squad: [mrEngls],
+    squad: [charMrEngls],
     speaker: 'Mr Engls',
     dialogue: 'No god, pliz no!',
-    sfx: sax,
+    sfx: sfxSax,
   },
   {
-    encounters: [pistolar],
+    encounters: [charSalamandr],
     speaker: 'Salmandr',
     dialogue: 'heeh',
     sfx: 'stop',
@@ -57,6 +59,6 @@ export default [
     squad: [],
     speaker: 'SCENE II',
     dialogue: '',
-    image: blackbg,
+    image: bgBlack,
   },
 ];

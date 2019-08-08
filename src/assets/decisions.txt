@@ -48,94 +48,76 @@ if [fail] get to "[fail] you are salmander`s prisoner"
 
 if protecc mr. engls
 
-choices:
-a)grab a sharp stone and aim at the head
+ choices:
+	a)grab a sharp stone and aim at the head
 
-b)grab a brush and put a little makeup
+			b)grab a brush and put a little makeup
 
-c)stop right there you criminal scum!
+			c)stop right there you criminal scum!
 
-d)attacc
+	d)attacc
 
-if a) roll dice and add body stat
+	if 
+		a) roll dice and add body stat
 
-{if roll 1 or 2 
-[fail] get salmendr`s atention get to "salmendr sees you"
+	{if roll 1 or 2 
+	[fail] get salmendr`s atention get to "salmendr sees you"
 
-if roll 3 or 4
-[mix success] you hit salmendr, but mr. engls gets wounded
 
-if roll higher than 4
-[full success] you kill salmendr and mr. engls survives
+	if roll higher than 4
+	[full success] you kill salmendr and mr. engls survives
 
-{{if [mix success] following choices appear
-a.a)take both salmendr and mr. engls to settlement
 
-a.b)take mr. engls to the settlement and kill the salmendr
+	{{if [full success] get to "talk with mr. engls"}}
 
-if a.a) get to "you catch salmendr with the frogs"
-
-if a.b) get to "talk with mr. engls"}}
-
-{{if [full success] get to "talk with mr. engls"}}
-
-{if b) or c) each character says: ..............
+			{if b) or c) each character says: ..............
  
-and the following choices appear:
+			and the following choices appear:
  
-b.a) why`d you leave the keys upon the table?
+				b.a) why`d you leave the keys upon the table?
 
-b.b) you violated the law!}
+				b.b) you violated the law!}
 
-{{if b.a) get to "dialog with salmendr"}}
+			{{if b.a) get to "dialog with salmendr"}}
 
-{{if b.b) roll dice and add communication stat
+			if roll 1 or 2
+			[fail] both mr. engls and you get shot
+ 	
+			if roll higher than 4 
+			[full success] salmendr obeys and you three get to the settlement
 
-if roll 1 or 2
-[fail] both mr. engls and you get shot
+			{if [fail] get to "[fail] you are salmander`s prisoner"
+
+
+			if [full success] get to "[fail] get drunk with the frogs"} -------------> DUCE LA STAGE 3
+			// CONTINUARE FAIL ---> TRAIESTE SALAMANDER
+			{if d) following choices appear:
+					// TOATE FACE ACEELASI LUCRU
+					d.a)yeet his face off
+					d.b)bitchslap
+					d.c)bite his toe
+					d.d)kick the balls
+					d.e)spit in his mouth
+					d.f)reeeeeee his guts out
+					d.g)swear the soul out of him
+					//
+					all the choices from above lead to the same thing:
  
-if roll 3 or 4
-[mix success] salmendr gets hearth attack and dies, mr. engls gets shot in the head 
+						HA HA!
 
-if roll higher than 4 
-[full success] salmendr obeys and you three get to the settlement
 
-{if [fail] get to "[fail] you are salmander`s prisoner"
+					{if roll 1 or 2
+						[fail] you embarrass yourself and mr. engls gets shot
 
-if [mix success] get to scene 3
 
-if [full success] get to "[fail] get drunk with the frogs"}
+					if roll higher than 4
+						[full success] you make salmendr cry, he drops the gun down}
 
-{if d) following choices appear:
+					{if [fail] get to "[fail] you are salmander`s prisoner"
 
-d.a)yeet his face off
-d.b)bitchslap
-d.c)bite his toe
-d.d)kick the balls
-d.e)spit in his mouth
-d.f)reeeeeee his guts out
-d.g)swear the soul out of him
 
-all the choices from above lead to the same thing:
- 
-HA HA!
 
-roll dice and add communication stat
-
-{if roll 1 or 2
-[fail] you embarrass yourself and mr. engls gets shot
-
-if roll 3 or 4
-[mix success] get salmendrs attention and prevent him from shooting mr. engls
-
-if roll higher than 4
-[full success] you make salmendr cry, he drops the gun down}
-
-{if [fail] get to "[fail] you are salmander`s prisoner"
-
-if [mix success] get to "salmendr sees you"
-
-if [full success] get to "talking with salmendr"}
+					if [full success] get to "talking with salmendr"}
 
 
 if distract with a noise (soundefect)
@@ -170,10 +152,3 @@ if roll higher than 4
 {if [mix success] get to "talking with salmendr"
 
 if [full success] get to "talking with salmendr"}
-
-
-sdfg
-
-
- 
-
