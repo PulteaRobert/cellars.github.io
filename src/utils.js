@@ -1,3 +1,5 @@
+import { Howl } from 'howler';
+
 /* eslint-disable */
 export default {
   includes: (ar1, ar2) => {
@@ -11,5 +13,11 @@ export default {
       }
     }
     return true;
+  },
+  playSound: file => {
+    const sound = new Howl({
+      src: file,
+    });
+    sound.play();
   },
 };

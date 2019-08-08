@@ -19,6 +19,8 @@
 </template>
 
 <script>
+import utils from '../utils';
+
 export default {
   computed: {
     speaker() {
@@ -33,6 +35,7 @@ export default {
   },
   methods: {
     click(choiceIndex) {
+      utils.playSound('../assets/sound/test.mp3');
       this.$store.commit('nextScreen', choiceIndex);
     },
   },
