@@ -18,6 +18,10 @@ export default [
             flag: 'protecc1-succes',
             chance: 0.5,
           },
+          'protecc23',
+          {
+            flag: 'protecc23',
+          }
         ],
       },
       { text: 'grab a brush and put a little makeup', flags: 'protecc2' },
