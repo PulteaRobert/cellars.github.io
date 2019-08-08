@@ -65,6 +65,7 @@ export default {
 }
 
 .dialogue {
+  padding: 5vh 3vw;
   height: 70vh;
 }
 
