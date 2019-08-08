@@ -71,6 +71,13 @@ export default {
   image-rendering: crisp-edges;
 }
 
+@media (max-aspect-ratio: 11/7) {
+  .viewport {
+    width: auto;
+    height: 50vh;
+  }
+}
+
 .image {
   width: 100%;
   height: 100%;
@@ -96,5 +103,12 @@ export default {
 
   image-rendering: pixelated;
   image-rendering: crisp-edges;
+}
+
+@media (max-aspect-ratio: 11/7) {
+  .character {
+    height: auto;
+    width: 20vw;
+  }
 }
 </style>

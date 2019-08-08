@@ -27,9 +27,11 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+
+  background-color: black;
 }
 
-@media only screen and (max-width: 1000px) {
+@media (max-aspect-ratio: 11/7) {
   .game {
     flex-direction: column;
   }

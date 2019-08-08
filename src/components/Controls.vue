@@ -6,14 +6,15 @@
     </div>
     <div class="buttons">
       <div class="choices" v-if="choices.length > 0">
-        <button
+        <a
           class="choice-btn"
           v-for="(choice, i) in choices"
           :key="choice.text"
-          @click="click(i)"
-        >{{ choice.text }}</button>
+          :style="`color:${textColor}`"
+          @click.prevent="click(i)"
+        >&gt;&nbsp;{{ choice.text }}</a>
       </div>
-      <a v-else class="next-btn" @click="click(null)" :style="`color:${textColor}`">NEXT</a>
+      <a v-else class="next-btn" @click.prevent="click(null)" :style="`color:${textColor}`">NEXT</a>
     </div>
   </div>
 </template>
@@ -58,25 +59,19 @@ export default {
   flex-direction: column;
 }
 
-@media only screen and (max-width: 1000px) {
-  .controls {
-    width: auto;
-  }
-}
-
 .dialogue {
+  flex-grow: 4;
   padding: 5vh 3vw;
-  height: 70vh;
 }
 
 .buttons {
-  height: 30vh;
+  padding: 5vh 3vw;
 }
 
 .next-btn {
   margin-top: 50px;
   padding: 10px;
-  font-size: 2rem;
+  font-size: 5vh;
 
   border: none;
   outline: none;
@@ -95,12 +90,35 @@ export default {
 .choices {
   margin-top: 50px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   justify-items: center;
 }
 
 .choice-btn {
-  font-size: 1.5rem;
+  font-size: 3vh;
+  cursor: pointer;
+  margin-top: 4vh;
+  text-shadow: 0.5vh 0.5vh black;
+}
+
+.choice-btn:hover {
+  font-kerning: 2px;
+}
+
+.choice-btn:active,
+.choice-btn:focus {
+  text-shadow: none;
+}
+
+@media (max-aspect-ratio: 11/7) {
+  .controls {
+    width: auto;
+    height: 50vh;
+  }
+
+  .dialogue {
+    flex-grow: 1;
+  }
 }
 </style>
