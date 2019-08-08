@@ -19,7 +19,7 @@ export default [
       { text: 'attacc', flags: 'protecc4' },
     ],
   },
-  {
+  { // ** WORK IN PROGRESS DORESCT SALMANDER MORT SI ENGELS FARA MAINI IN AER MARCA UNTOLD
     if: ['protecc1', 'protecc1-succes'],
     encounters: [mrEngls],
     squad: [mrEngls],
