@@ -3,10 +3,12 @@ import bg from './assets/scene1.gif';
 import pistolar from './assets/pistolar.png';
 import sax from './assets/sound/SaxSeal.mp3';
 
+import utils from './utils';
+
 export default [
   {
     image: bg,
-    color: 'rgb(138, 0, 236)',
+    color: utils.rgb(138, 0, 236),
   },
   {
     squad: [mrEngls],
@@ -24,7 +26,13 @@ export default [
     choices: [
       {
         text: 'RUN!',
-        flags: 'run',
+        flags: [
+          'run',
+          {
+            flag: 'success',
+            chance: 0.5,
+          },
+        ],
       },
       {
         text: 'protecc Mr. Engls',
@@ -35,5 +43,9 @@ export default [
         flag: 'distract',
       },
     ],
+  },
+  {
+    if: ['run'],
+
   },
 ];
