@@ -39,6 +39,6 @@ export default {
       g = bgColor.g * 255,
       b = bgColor.b * 255;
     let yiq = (r * 299 + g * 587 + b * 114) / 1000;
-    return yiq >= 196 ? 'black' : 'white';
+    return yiq >= 128 ? 'black' : 'white';
   },
 };

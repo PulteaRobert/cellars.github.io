@@ -1,6 +1,6 @@
 <template>
   <div class="controls" :style="getControlsStyle()">
-    <div class="dialogue" :style="getDialogueStyle()">
+    <div class="dialogue" :style="`color:${dialogueColor}`">
       <h1>{{ speaker }}</h1>
       <p>{{ dialogue }}</p>
     </div>
@@ -29,6 +29,9 @@ export default {
     dialogue() {
       return this.$store.state.game.dialogue;
     },
+    dialogueColor() {
+      return utils.textColor(this.$store.state.game.color);
+    },
     choices() {
       return this.$store.state.game.choices;
     },
@@ -40,9 +43,6 @@ export default {
     getControlsStyle() {
       const col = this.$store.state.game.color;
       return `background-color:rgb(${col.r}, ${col.g}, ${col.b})`;
-    },
-    getDialogueStyle() {
-      return `color:${utils.textColor(this.$store.state.game.color)}`;
     },
   },
 };
