@@ -1,5 +1,7 @@
 import { Howl, Howler } from 'howler';
 
+import bgBlack from './assets/Blackbg.jpg';
+
 /* eslint-disable */
 export default {
   includes: (ar1, ar2) => {
@@ -38,4 +40,12 @@ export default {
     let yiq = (bgColor.r * 299 + bgColor.g * 587 + bgColor.b * 114) / 1000;
     return yiq >= 128 ? 'black' : 'white';
   },
+  sceneTransition: sceneName => ({
+    encounters: [],
+    squad: [],
+    speaker: sceneName,
+    dialogue: '',
+    image: bgBlack,
+    color: { r: 0, g: 0, b: 0 },
+  }),
 };
