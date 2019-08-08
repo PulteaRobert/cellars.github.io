@@ -1,7 +1,6 @@
 import utils from '@/utils';
 
 import bgForest from '@/assets/scene1.gif';
-import bgBlack from '@/assets/Blackbg.jpg';
 
 import charMrEngls from '@/assets/mr.engls.png';
 import charSalamandr from '@/assets/pistolar.salmendr.png';
@@ -13,8 +12,11 @@ import choiceProtect from './choices/protect';
 import choiceDistract from './choices/distract';
 
 export default [
+  utils.sceneTransition('SCENE I'),
   {
+    scene: '1',
     image: bgForest,
+    speaker: '',
     color: utils.rgb(138, 0, 236),
   },
   {
@@ -54,11 +56,4 @@ export default [
   ...choiceRun,
   ...choiceProtect,
   ...choiceDistract,
-  {
-    encounters: [],
-    squad: [],
-    speaker: 'SCENE II',
-    dialogue: '',
-    image: bgBlack,
-  },
 ];

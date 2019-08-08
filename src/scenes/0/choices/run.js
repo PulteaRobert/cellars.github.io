@@ -1,4 +1,5 @@
 import charMrEngls from '@/assets/mr.engls.png';
+import charMrEnglsWounded from '@/assets/wounded.engls.png';
 
 import sfxRun from '@/assets/sound/RUN.mp3';
 import sfxGunshot from '@/assets/sound/gunshot.mp3';
@@ -29,6 +30,7 @@ export default [
     squad: [],
     dialogue: '',
     speaker: '',
+    jumpto: '3',
   },
   {
     if: ['run', '!run-success'],
@@ -39,7 +41,12 @@ export default [
   {
     if: ['run', '!run-success'],
     sfx: sfxGunshot,
+    squad: [charMrEnglsWounded],
+  },
+  {
+    if: ['run', '!run-success'],
     speaker: 'Salmandr',
     dialogue: "I'll take you to my secret base",
+    jumpto: '2',
   },
 ];
