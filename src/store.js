@@ -53,12 +53,11 @@ export default new Vuex.Store({
         state.game.choices.length = 0;
       }
 
-      if (state.jumpto) {
-        console.log('help');
+      if (state.game.jumpto) {
         do {
           state.index += 1;
-        } while (data[state.index].scene !== state.jumpto);
-        state.jumpto = null;
+        } while (data[state.index].scene !== state.game.jumpto);
+        state.game.jumpto = null;
       } else {
         do {
           state.index += 1;
