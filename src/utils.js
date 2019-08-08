@@ -14,7 +14,48 @@ export default {
         return false;
       }
     }
+
     return true;
+  },
+  toRoman: num => {
+    if (isNaN(num)) return NaN;
+    let digits = String(+num).split(''),
+      key = [
+        '',
+        'C',
+        'CC',
+        'CCC',
+        'CD',
+        'D',
+        'DC',
+        'DCC',
+        'DCCC',
+        'CM',
+        '',
+        'X',
+        'XX',
+        'XXX',
+        'XL',
+        'L',
+        'LX',
+        'LXX',
+        'LXXX',
+        'XC',
+        '',
+        'I',
+        'II',
+        'III',
+        'IV',
+        'V',
+        'VI',
+        'VII',
+        'VIII',
+        'IX',
+      ],
+      roman = '',
+      i = 3;
+    while (i--) roman = (key[+digits.pop() + i * 10] || '') + roman;
+    return Array(+digits.join('') + 1).join('M') + roman;
   },
   playSound: file => {
     if (!file) {
@@ -40,10 +81,11 @@ export default {
     let yiq = (bgColor.r * 299 + bgColor.g * 587 + bgColor.b * 114) / 1000;
     return yiq >= 128 ? 'black' : 'white';
   },
-  sceneTransition: sceneName => ({
+  sceneTransition: scene => ({
+    scene: `${scene}`,
     encounters: [],
     squad: [],
-    speaker: sceneName,
+    speaker: `SCENE ${toRoman(scene)}`,
     dialogue: '',
     image: bgBlack,
     color: { r: 0, g: 0, b: 0 },
