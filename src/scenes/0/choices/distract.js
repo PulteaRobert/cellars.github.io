@@ -38,30 +38,58 @@ export default [
   },
   {
     if: ['offer-success'],
-    choices: [],
+    choices: [
+      {
+        text: 'Next',
+        flags: [
+          'offer',
+          {
+            flag: 'iftheygetshot',
+            chance: 0.5,
+          },
+        ],
+      },
+    ],
     sfx: tgftheme,
     encounters: [salamandrlooking],
   },
   {
     if: ['collabs'],
-    choices: [],
     sfx: pinacollada,
     encounters: [salamandrlooking],
+    dialogue: 'fndfjdsljfdsj',
+    choices: [
+      {
+        text: 'Next',
+        flags: [
+          'offer',
+          {
+            flag: 'iftheygetshot',
+            chance: 0.5,
+          },
+        ],
+      },
+    ],
   },
   {
     if: ['wil?'],
-    choices: [],
+    choices: [
+      {
+        text: 'Next',
+        flags: [
+          'offer',
+          {
+            flag: 'iftheygetshot',
+            chance: 0.5,
+          },
+        ],
+      },
+    ],
     sfx: wiz,
     encounters: [salamandrlooking],
   },
   {
-    dialogue: 'fndfjdsljfdsj',
-    flags: [
-      'offer',
-      {
-        flag: 'offer-success',
-        chance: 0.5,
-      },
-    ],
+    if: ['iftheygetshot'],
+    dialogue: '4123432423432',
   },
 ];
