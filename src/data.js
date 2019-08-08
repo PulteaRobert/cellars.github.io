@@ -1,4 +1,4 @@
-import mrEngls from './assets/MrEngls.png';
+import mrEngls from './assets/mrengls.png';
 import bg from './assets/scene1.gif';
 import pistolar from './assets/pistolar.png';
 import sax from './assets/sound/SaxSeal.mp3';

@@ -1,6 +1,6 @@
 <template>
   <div class="controls" :style="getControlsStyle()">
-    <div class="dialogue" :style="`color:${dialogueColor}`">
+    <div class="dialogue" :style="`color:${textColor}`">
       <h1>{{ speaker }}</h1>
       <p>{{ dialogue }}</p>
     </div>
@@ -13,7 +13,7 @@
           @click="click(i)"
         >{{ choice.text }}</button>
       </div>
-      <button v-else class="next-btn" @click="click(null)">NEXT</button>
+      <a v-else class="next-btn" @click="click(null)" :style="`color:${textColor}`">NEXT</a>
     </div>
   </div>
 </template>
@@ -29,7 +29,7 @@ export default {
     dialogue() {
       return this.$store.state.game.dialogue;
     },
-    dialogueColor() {
+    textColor() {
       return utils.textColor(this.$store.state.game.color);
     },
     choices() {
@@ -77,6 +77,19 @@ export default {
   margin-top: 50px;
   padding: 10px;
   font-size: 2rem;
+
+  border: none;
+  outline: none;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  text-shadow: 0.5vh 0.5vh black;
+}
+
+.next-btn:active,
+.next-btn:focus {
+  text-shadow: none;
 }
 
 .choices {
