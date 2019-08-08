@@ -29,4 +29,16 @@ export default {
 
     sound.play();
   },
+  rgb: (r, g, b) => ({
+    r,
+    g,
+    b,
+  }),
+  textColor: bgColor => {
+    let r = bgColor.r * 255,
+      g = bgColor.g * 255,
+      b = bgColor.b * 255;
+    let yiq = (r * 299 + g * 587 + b * 114) / 1000;
+    return yiq >= 196 ? 'black' : 'white';
+  },
 };

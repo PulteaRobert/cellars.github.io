@@ -1,6 +1,6 @@
 <template>
-  <div class="controls" :style="getStyle()">
-    <div class="dialogue">
+  <div class="controls" :style="getControlsStyle()">
+    <div class="dialogue" :style="getDialogueStyle()">
       <h1>{{ speaker }}</h1>
       <p>{{ dialogue }}</p>
     </div>
@@ -19,6 +19,8 @@
 </template>
 
 <script>
+import utils from '../utils';
+
 export default {
   computed: {
     speaker() {
@@ -35,8 +37,12 @@ export default {
     click(choiceIndex) {
       this.$store.commit('nextScreen', choiceIndex);
     },
-    getStyle() {
-      return `background-color:${this.$store.state.game.color}`;
+    getControlsStyle() {
+      const col = this.$store.state.game.color;
+      return `background-color:rgb(${col.r}, ${col.g}, ${col.b})`;
+    },
+    getDialogueStyle() {
+      return `color:${utils.textColor(this.$store.state.game.color)}`;
     },
   },
 };
@@ -59,8 +65,6 @@ export default {
 }
 
 .dialogue {
-  color: white;
-
   height: 70vh;
 }
 
