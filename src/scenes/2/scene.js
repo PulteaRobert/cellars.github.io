@@ -2,16 +2,18 @@ import utils from '@/utils';
 
 import bgWayToLab from '@/assets/wayToLab.jpg';
 
-import charMrEnglsHurt from '@/assets/wounded.engls.png';
+import charMrEnglsWounded from '@/assets/wounded.engls.png';
 import charSalamandr from '@/assets/pistolar.salmendr.png';
 
 export default [
   {
+    scene: '2',
     image: bgWayToLab,
     speaker: '',
     dialogue: '',
     color: utils.rgb(166, 166, 166),
-    squad: [charMrEnglsHurt],
+    squad: [charMrEnglsWounded],
     encounters: [charSalamandr],
   },
+  utils.sceneTransition('SCENE III'),
 ];
