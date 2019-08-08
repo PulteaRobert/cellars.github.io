@@ -58,7 +58,7 @@ export default {};
 }
 
 #bg {
-  background-image: url("../assets/swamp.png");
+  background-image: url("../assets/backgrounds/bgSwamp.png");
   background-size: cover;
   position: fixed;
   background-repeat: no-repeat;

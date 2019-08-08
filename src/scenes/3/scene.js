@@ -1,17 +1,16 @@
 import utils from '@/utils';
 
-import bgSettlement from '@/assets/tiredtyres.gif';
-
-import charMrEngls from '@/assets/engls.hands.down.png';
+import bgs from '@/assets/backgrounds';
+import chr from '@/assets/characters';
 
 export default [
   utils.sceneTransition(3),
   {
-    image: bgSettlement,
+    image: bgs.tyres,
     speaker: '',
     dialogue: '',
     color: utils.rgb(144, 66, 245),
-    squad: [charMrEngls],
+    squad: [chr.engls],
     encounters: [],
   },
 ];

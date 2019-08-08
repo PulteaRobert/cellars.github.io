@@ -1,15 +1,12 @@
-import sadviolin from '@/assets/sound/sadv.mp3';
-import tgftheme from '@/assets/sound/tgftheme.mp3';
-import pinacollada from '@/assets/sound/pinacollada.mp3';
-import wiz from '@/assets/sound/wutizluv.mp3';
-import salamandrlooking from '@/assets/SalSeesYou.png';
+import chr from '@/assets/characters';
+import sfx from '@/assets/sounds';
 
 export default [
   {
     if: ['distract'],
     speaker: '',
     dialogue: '',
-    sfx: sadviolin,
+    sfx: sfx.violinAirhorn,
   },
   {
     if: ['distract'],
@@ -50,13 +47,13 @@ export default [
         ],
       },
     ],
-    sfx: tgftheme,
-    encounters: [salamandrlooking],
+    sfx: sfx.offer,
+    encounters: [chr.salamandrCurious],
   },
   {
     if: ['collabs'],
-    sfx: pinacollada,
-    encounters: [salamandrlooking],
+    sfx: sfx.pinacollada,
+    encounters: [chr.salamandrCurious],
     dialogue: 'fndfjdsljfdsj',
     choices: [
       {
@@ -85,8 +82,8 @@ export default [
         ],
       },
     ],
-    sfx: wiz,
-    encounters: [salamandrlooking],
+    sfx: sfx.love,
+    encounters: [chr.salamandrCurious],
   },
   {
     if: ['iftheygetshot'],

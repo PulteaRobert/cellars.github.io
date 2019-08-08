@@ -1,11 +1,8 @@
 import utils from '@/utils';
 
-import bgForest from '@/assets/scene1.gif';
-
-import charMrEngls from '@/assets/mr.engls.png';
-import charSalamandr from '@/assets/pistolar.salmendr.png';
-
-import sfxSax from '@/assets/sound/SaxSeal.mp3';
+import bgs from '@/assets/backgrounds';
+import chr from '@/assets/characters';
+import sfx from '@/assets/sounds';
 
 import choiceRun from './choices/run';
 import choiceProtect from './choices/protect';
@@ -13,18 +10,18 @@ import choiceDistract from './choices/distract';
 
 export default [
   {
-    image: bgForest,
+    image: bgs.forest,
     speaker: '',
     color: utils.rgb(138, 0, 236),
   },
   {
-    squad: [charMrEngls],
+    squad: [chr.englsCornered],
     speaker: 'Mr Engls',
     dialogue: 'No god, pliz no!',
-    sfx: sfxSax,
+    sfx: sfx.sax,
   },
   {
-    encounters: [charSalamandr],
+    encounters: [chr.salamandr],
     speaker: 'Salmandr',
     dialogue: 'heeh',
     sfx: 'stop',

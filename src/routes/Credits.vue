@@ -44,7 +44,7 @@ p {
 }
 
 #bg {
-  background-image: url("../assets/swamp.png");
+  background-image: url("../assets/backgrounds/bgSwamp.png");
   background-size: cover;
   background-repeat: no-repeat;
 }

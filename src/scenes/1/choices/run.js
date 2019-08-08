@@ -1,15 +1,12 @@
-import charMrEngls from '@/assets/mr.engls.png';
-import charMrEnglsWounded from '@/assets/wounded.engls.png';
-
-import sfxRun from '@/assets/sound/RUN.mp3';
-import sfxGunshot from '@/assets/sound/gunshot.mp3';
+import chr from '@/assets/characters';
+import sfx from '@/assets/sounds';
 
 export default [
   {
     if: ['run'],
     speaker: 'Mr. Engls',
     dialogue: 'I shall run away from my problems',
-    sfx: sfxRun,
+    sfx: sfx.run,
   },
   {
     if: ['run', 'run-success'],
@@ -20,7 +17,7 @@ export default [
   },
   {
     if: ['run', 'run-success'],
-    squad: [charMrEngls],
+    squad: [chr.englsCornered],
     encounters: [],
     speaker: 'Mr. Engls',
     dialogue: "Phew... look's like I lost him... I can see the settlement already",
@@ -40,8 +37,8 @@ export default [
   },
   {
     if: ['run', '!run-success'],
-    sfx: sfxGunshot,
-    squad: [charMrEnglsWounded],
+    sfx: sfx.gunshot,
+    squad: [chr.englsWounded],
   },
   {
     if: ['run', '!run-success'],

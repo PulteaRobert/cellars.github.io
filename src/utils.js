@@ -1,6 +1,6 @@
 import { Howl, Howler } from 'howler';
 
-import bgBlack from './assets/Blackbg.jpg';
+import bgs from '@/assets/backgrounds';
 
 /* eslint-disable */
 export default {
@@ -43,54 +43,13 @@ export default {
     return yiq >= 128 ? 'black' : 'white';
   },
   sceneTransition: scene => {
-    const toRoman = num => {
-      if (isNaN(num)) return NaN;
-      let digits = String(+num).split(''),
-        key = [
-          '',
-          'C',
-          'CC',
-          'CCC',
-          'CD',
-          'D',
-          'DC',
-          'DCC',
-          'DCCC',
-          'CM',
-          '',
-          'X',
-          'XX',
-          'XXX',
-          'XL',
-          'L',
-          'LX',
-          'LXX',
-          'LXXX',
-          'XC',
-          '',
-          'I',
-          'II',
-          'III',
-          'IV',
-          'V',
-          'VI',
-          'VII',
-          'VIII',
-          'IX',
-        ],
-        roman = '',
-        i = 3;
-      while (i--) roman = (key[+digits.pop() + i * 10] || '') + roman;
-      return Array(+digits.join('') + 1).join('M') + roman;
-    };
-
     return {
       scene: `${scene}`,
       encounters: [],
       squad: [],
-      speaker: `SCENE ${toRoman(scene)}`,
+      speaker: `INTERMISSION`,
       dialogue: '',
-      image: bgBlack,
+      image: bgs.black,
       color: { r: 0, g: 0, b: 0 },
     };
   },
