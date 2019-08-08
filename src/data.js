@@ -1,64 +1,30 @@
-import maf1 from './assets/ricardio.png';
+import engls from './assets/mr.engls.png';
+import pistolar from './assets/pistolar.png';
 import maf2 from './assets/mafia.png';
 import gift from './assets/gift.png';
 
 import police from './assets/police.png';
 
-import inside from './assets/forest.pixel.prple.jpg';
+import background from './assets/forest.pixel.prple.jpg';
 import outside from './assets/outside.jpeg';
 
 export default [
   {
-    image: inside,
+    image: background,
   },
   {
-    squad: [maf1],
-    speaker: 'mafia man',
-    dialogue: 'where is ricardio?? he is late',
+    squad: [engls],
+    speaker: 'Mr. Engls',
+    dialogue: 'no god, pliz no!',
   },
   {
-    encounters: [maf2],
-    speaker: 'ricardio',
-    dialogue: 'i am',
+    encounters: [pistolar],
+    speaker: 'Pistolar',
+    dialogue: '*heh*',
   },
   {
-    dialogue: 'he',
-  },
-  {
-    dialogue: 're',
-  },
-  {
-    speaker: 'mafia man',
-    dialogue: 'did you bring it?',
-  },
-  {
-    speaker: 'ricardio',
-    dialogue: 'of course',
-    encounters: [maf2, gift],
-  },
-  {
-    speaker: 'christmas box',
-    dialogue: 'i am full of illicit drugs!',
-  },
-  {
-    speaker: 'police car alarm',
-    dialogue: 'WEEEEE WOOOOOO WEEEEE WOOOO',
-  },
-  {
-    speaker: 'police car alarm',
-    dialogue: 'WEEEEEEEEE WOOOO WEEEEEE WOOO',
-  },
-  {
-    speaker: 'police car alarm',
-    dialogue: 'WEEE WOOOOOOOO WEEEEE WOOOOOoooooooo...',
-  },
-  {
-    speaker: 'police car alarm',
-    dialogue: 'beep beep',
-  },
-  {
-    speaker: 'mafia man',
-    dialogue: 'oh no it is the police? what is crossing your mind about our dire situation lad?',
+    speaker: 'What will he do?',
+    dialogue: '',
     choices: [
       {
         text: 'RUN!',
@@ -138,7 +104,7 @@ export default [
   {
     if: ['hide'],
     squad: [],
-    encounters: [maf1, maf2, gift],
+    encounters: [maf2, gift],
     speaker: '',
     dialogue: '',
   },
@@ -168,7 +134,6 @@ export default [
   },
   {
     if: ['run'],
-    squad: [maf1],
     encounters: [maf2],
     speaker: 'mafia man',
     dialogue: 'we escaped',
@@ -176,7 +141,7 @@ export default [
   {
     if: ['run'],
     squad: [police],
-    encounters: [maf1, maf2],
+    encounters: [maf2],
     dialogue: 'nvm',
   },
   {
