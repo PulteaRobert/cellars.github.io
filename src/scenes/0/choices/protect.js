@@ -1,3 +1,5 @@
+import mrEngls from '@/assets/mr.engls.png';
+
 export default [
   {
     if: ['protecc'],
@@ -19,5 +21,9 @@ export default [
   },
   {
     if: ['protecc1', 'protecc1-succes'],
+    encounters: [mrEngls],
+    squad: [mrEngls],
+
+
   },
 ];

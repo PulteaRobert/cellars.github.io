@@ -23,7 +23,7 @@ export default [
   },
   {
     encounters: [pistolar],
-    speaker: 'Pistolar',
+    speaker: 'Salmandr',
     dialogue: 'heeh',
     sfx: 'stop',
   },
@@ -35,7 +35,7 @@ export default [
           'run',
           {
             flag: 'run-success',
-            chance: 1,
+            chance: 0.5,
           },
         ],
       },
