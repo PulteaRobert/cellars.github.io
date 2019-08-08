@@ -21,8 +21,19 @@ export default [
     sfx: 'stop',
   },
   {
-    choices:[
-      
-    ]
+    choices: [
+      {
+        text: 'RUN!',
+        flags: 'run',
+      },
+      {
+        text: 'protecc Mr. Engls',
+        flag: 'protecc',
+      },
+      {
+        text: 'distract with a noise',
+        flag: 'distract',
+      },
+    ],
   },
 ];
