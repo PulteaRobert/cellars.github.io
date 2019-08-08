@@ -1,4 +1,4 @@
-import mrEngls from '../assets/mr.engls.png';
+import mrEngls from '@/assets/mr.engls.png';
 
 export default [
   {
