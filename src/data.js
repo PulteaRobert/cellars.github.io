@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import engls from './assets/mr.engls.png';
 import pistolar from './assets/pistolar.png';
 import maf2 from './assets/mafia.png';
@@ -143,11 +144,27 @@ export default [
     squad: [police],
     encounters: [maf2],
     dialogue: 'nvm',
+=======
+import mrEngls from './assets/MrEngls.png';
+import bg from './assets/ForestPixelPurple.jpg';
+import pistolar from './assets/pistolar.png';
+
+import sax from './assets/sound/test.mp3';
+import nush from './assets/sound/test2.mp3';
+
+export default [
+  {
+    image: bg,
   },
   {
-    squad: [],
-    encounters: [],
-    speaker: 'the en',
-    dialogue: 'd',
+    squad: [mrEngls],
+    speaker: 'Mr Engls',
+    dialogue: 'no god, pliz no!',
+>>>>>>> 09604428bd753584853b2cefc3dfd604e4463962
+  },
+  {
+    encounters: [pistolar],
+    speaker: 'pistolar',
+    dialogue: 'heeh',
   },
 ];

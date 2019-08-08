@@ -1,5 +1,5 @@
 <template>
-  <div class="controls">
+  <div class="controls" :style="getStyle()">
     <div class="dialogue">
       <h1>{{ speaker }}</h1>
       <p>{{ dialogue }}</p>
@@ -35,6 +35,9 @@ export default {
     click(choiceIndex) {
       this.$store.commit('nextScreen', choiceIndex);
     },
+    getStyle() {
+      return `background-color:${this.$store.state.game.color}`;
+    },
   },
 };
 </script>
@@ -47,8 +50,6 @@ export default {
 
   display: flex;
   flex-direction: column;
-
-  background-color: brown;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -61,12 +62,10 @@ export default {
   color: white;
 
   height: 70vh;
-  background-color: yellowgreen;
 }
 
 .buttons {
   height: 30vh;
-  background-color: yellow;
 }
 
 .next-btn {
