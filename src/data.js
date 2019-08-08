@@ -30,22 +30,34 @@ export default [
           'run',
           {
             flag: 'success',
-            chance: 0.5,
+            chance: 1,
           },
         ],
       },
       {
         text: 'protecc Mr. Engls',
-        flag: 'protecc',
+        flags: 'protecc',
       },
       {
         text: 'distract with a noise',
-        flag: 'distract',
+        flags: 'distract',
       },
     ],
   },
   {
-    if: ['run'],
-
+    if: ['run', 'success'],
+    squad: [],
+    encounters: [mrEngls],
+    // sfx: runInContext;?
+  },
+  {
+    if: ['run', 'success'],
+    squad: [],
+    speaker: 'Mr. Engls',
+    dialogue: 'Phew, I managed to lose him!',
+  },
+  {
+    if: ['run', 'success'],
+    dialogue: 'I can see the settlement!',
   },
 ];
