@@ -66,6 +66,9 @@ export default {
 .viewport {
   width: 65vw;
   position: relative;
+
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 
 .image {
@@ -90,5 +93,8 @@ export default {
   height: 70vh;
 
   bottom: 0;
+
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 </style>
