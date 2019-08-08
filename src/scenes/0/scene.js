@@ -54,6 +54,7 @@ export default [
   ...choiceDistract,
   {
     encounters: [],
+    squad: [],
     speaker: 'SCENE II',
     dialogue: '',
     image: blackbg,
