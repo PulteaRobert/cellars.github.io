@@ -30,6 +30,7 @@ export default [
     squad: [],
     dialogue: '',
     speaker: '',
+    jumpto: '3',
   },
   {
     if: ['run', '!run-success'],
@@ -46,5 +47,6 @@ export default [
     if: ['run', '!run-success'],
     speaker: 'Salmandr',
     dialogue: "I'll take you to my secret base",
+    jumpto: '2',
   },
 ];

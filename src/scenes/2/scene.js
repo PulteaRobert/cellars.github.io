@@ -6,6 +6,7 @@ import charMrEnglsWounded from '@/assets/wounded.engls.png';
 import charSalamandr from '@/assets/pistolar.salmendr.png';
 
 export default [
+  utils.sceneTransition('SCENE II'),
   {
     scene: '2',
     image: bgWayToLab,
@@ -15,5 +16,4 @@ export default [
     squad: [charMrEnglsWounded],
     encounters: [charSalamandr],
   },
-  utils.sceneTransition('SCENE III'),
 ];

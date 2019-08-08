@@ -5,6 +5,7 @@ import bgSettlement from '@/assets/tiredtyres.gif';
 import charMrEngls from '@/assets/engls.hands.down.png';
 
 export default [
+  utils.sceneTransition('SCENE III'),
   {
     scene: '3',
     image: bgSettlement,
@@ -14,5 +15,4 @@ export default [
     squad: [charMrEngls],
     encounters: [],
   },
-  utils.sceneTransition('SCENE IV'),
 ];

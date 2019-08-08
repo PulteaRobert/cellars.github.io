@@ -10,6 +10,7 @@ export default new Vuex.Store({
   state: {
     index: 0,
     game: {
+      scene: '',
       squad: [],
       encounters: [],
       image: '',
@@ -19,6 +20,7 @@ export default new Vuex.Store({
       flags: [],
       color: '',
       sfx: null,
+      jumpto: null,
     },
   },
   mutations: {
@@ -51,17 +53,23 @@ export default new Vuex.Store({
         state.game.choices.length = 0;
       }
 
+      if (state.jumpto) {
+        console.log('help');
+        do {
+          state.index += 1;
+        } while (data[state.index].scene !== state.jumpto);
+        state.jumpto = null;
+      } else {
+        do {
+          state.index += 1;
+        } while (
+          data[state.index].if !== undefined
+          && !utils.includes(state.game.flags, data[state.index].if)
+        );
+      }
+
       state.game.sfx = null;
-
-      do {
-        state.index += 1;
-      } while (
-        data[state.index].if !== undefined
-        && !utils.includes(state.game.flags, data[state.index].if)
-      );
-
       state.game = Object.assign(state.game, data[state.index]);
-
       utils.playSound(state.game.sfx);
     },
     reloadScreen(state) {
