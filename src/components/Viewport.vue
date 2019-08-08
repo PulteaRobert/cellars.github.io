@@ -86,7 +86,7 @@ export default {
 .character {
   position: absolute;
 
-  width: 20vw;
+  width: auto;
   height: 70vh;
 
   bottom: 0;
