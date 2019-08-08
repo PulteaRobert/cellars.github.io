@@ -30,7 +30,6 @@ export default [
   {
     speaker: 'mafia man',
     dialogue: 'did you bring it?',
-    thoughts: true,
   },
   {
     speaker: 'ricardio',

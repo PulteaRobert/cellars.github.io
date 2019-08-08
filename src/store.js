@@ -17,7 +17,6 @@ export default new Vuex.Store({
       speaker: '',
       choices: [],
       flags: [],
-      thoughts: false,
     },
   },
   mutations: {
