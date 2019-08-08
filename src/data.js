@@ -2,7 +2,7 @@ import mrEngls from './assets/MrEngls.png';
 import bg from './assets/scene1.gif';
 import pistolar from './assets/pistolar.png';
 import sax from './assets/sound/SaxSeal.mp3';
-
+import blackbg from './assets/Blackbg.jpg';
 import utils from './utils';
 
 export default [
@@ -29,7 +29,7 @@ export default [
         flags: [
           'run',
           {
-            flags: 'run-success',
+            flag: 'run-success',
             chance: 1,
           },
         ],
@@ -61,5 +61,12 @@ export default [
   {
     if: ['run', 'run-success'],
     dialogue: 'I can see the settlement!',
+  },
+  {
+    if: ['run', 'run-success'],
+    encounters: [],
+    speaker: 'SCENE II',
+    dialogue: '',
+    image: blackbg,
   },
 ];
