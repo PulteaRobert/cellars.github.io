@@ -7,6 +7,9 @@ import police from './assets/police.png';
 import inside from './assets/forest.pixel.prple.jpg';
 import outside from './assets/outside.jpeg';
 
+import sax from './assets/sound/test.mp3';
+import nush from './assets/sound/test2.mp3';
+
 export default [
   {
     image: inside,
@@ -21,9 +24,11 @@ export default [
     encounters: [maf2],
     speaker: 'ricardio',
     dialogue: 'i am',
+    sfx: sax,
   },
   {
     dialogue: 'he',
+    sfx: nush,
   },
   {
     dialogue: 're',

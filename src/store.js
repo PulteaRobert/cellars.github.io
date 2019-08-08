@@ -51,6 +51,8 @@ export default new Vuex.Store({
         state.game.choices.length = 0;
       }
 
+      state.game.sfx = null;
+
       do {
         state.index += 1;
       } while (
