@@ -17,6 +17,8 @@ export default new Vuex.Store({
       speaker: '',
       choices: [],
       flags: [],
+      color: '',
+      sfx: null,
     },
   },
   mutations: {
@@ -57,9 +59,12 @@ export default new Vuex.Store({
       );
 
       state.game = Object.assign(state.game, data[state.index]);
+
+      utils.playSound(state.game.sfx);
     },
     reloadScreen(state) {
       state.game = Object.assign(state.game, data[state.index]);
+      utils.playSound(state.game.sfx);
     },
   },
   actions: {},

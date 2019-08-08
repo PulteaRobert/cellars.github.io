@@ -22,7 +22,6 @@ export default {
 
 <style>
 .game {
-  background-color: #28023c;
   height: 100vh;
 
   display: flex;

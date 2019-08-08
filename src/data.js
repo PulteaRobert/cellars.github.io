@@ -10,6 +10,7 @@ import outside from './assets/outside.jpeg';
 export default [
   {
     image: inside,
+    color: '#28023c',
   },
   {
     squad: [maf1],

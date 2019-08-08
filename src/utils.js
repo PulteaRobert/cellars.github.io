@@ -15,9 +15,12 @@ export default {
     return true;
   },
   playSound: file => {
+    if (!file) return;
+
     const sound = new Howl({
       src: file,
     });
+
     sound.play();
   },
 };
