@@ -5,9 +5,8 @@ import bgSettlement from '@/assets/tiredtyres.gif';
 import charMrEngls from '@/assets/engls.hands.down.png';
 
 export default [
-  utils.sceneTransition('SCENE III'),
+  utils.sceneTransition(3),
   {
-    scene: '3',
     image: bgSettlement,
     speaker: '',
     dialogue: '',

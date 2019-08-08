@@ -12,9 +12,7 @@ import choiceProtect from './choices/protect';
 import choiceDistract from './choices/distract';
 
 export default [
-  utils.sceneTransition('SCENE I'),
   {
-    scene: '1',
     image: bgForest,
     speaker: '',
     color: utils.rgb(138, 0, 236),

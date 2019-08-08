@@ -6,9 +6,8 @@ import charMrEnglsWounded from '@/assets/wounded.engls.png';
 import charSalamandr from '@/assets/pistolar.salmendr.png';
 
 export default [
-  utils.sceneTransition('SCENE II'),
+  utils.sceneTransition(2),
   {
-    scene: '2',
     image: bgWayToLab,
     speaker: '',
     dialogue: '',
