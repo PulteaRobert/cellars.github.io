@@ -1,3 +1,4 @@
-import scene0 from './scenes/0/scene';
+import scene1 from './scenes/0/scene';
+import scene2 from './scenes/2/scene';
 
-export default [...scene0];
+export default [...scene1, ...scene2];

@@ -1,12 +1,14 @@
-import mrEngls from '@/assets/mr.engls.png';
-import run from '@/assets/sound/RUN.mp3';
+import charMrEngls from '@/assets/mr.engls.png';
+
+import sfxRun from '@/assets/sound/RUN.mp3';
+import sfxGunshot from '@/assets/sound/gunshot.mp3';
 
 export default [
   {
     if: ['run'],
     speaker: 'Mr. Engls',
     dialogue: 'I shall run away from my problems',
-    sfx: run,
+    sfx: sfxRun,
   },
   {
     if: ['run', 'run-success'],
@@ -17,7 +19,7 @@ export default [
   },
   {
     if: ['run', 'run-success'],
-    squad: [mrEngls],
+    squad: [charMrEngls],
     encounters: [],
     speaker: 'Mr. Engls',
     dialogue: "Phew... look's like I lost him... I can see the settlement already",
@@ -36,7 +38,7 @@ export default [
   },
   {
     if: ['run', '!run-success'],
-    // gunshots sfx
+    sfx: sfxGunshot,
     speaker: 'Salmandr',
     dialogue: "I'll take you to my secret base",
   },
