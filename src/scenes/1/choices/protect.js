@@ -49,12 +49,18 @@ export default [
     jumpto: '2',
   },
   {
-    if: ['protect2'],
+    if: ['protect3'],
+    sfx: sfx.criminal,
+    speaker: 'You',
+    dialogue: 'Stop right there you criminal scum!',
+  },
+  {
+    if: ['protect23'],
     speaker: '',
     dialogue: '....',
   },
   {
-    if: ['protect2'],
+    if: ['protect23'],
     speaker: '',
     dialogue: '......',
   },
@@ -63,12 +69,6 @@ export default [
     if: ['protect2'],
     speaker: '',
     dialogue: 'You put on makeup.',
-  },
-  {
-    if: ['protect3'],
-    sfx: sfx.criminal,
-    speaker: 'You',
-    dialogue: 'Stop right there you criminal scum!',
   },
   {
     if: ['protect23'],
