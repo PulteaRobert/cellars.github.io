@@ -4,9 +4,9 @@
     <div class="text">
       <h1 id="title">Credits</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Tenetur ad magni mollitia nulla fuga officia eos odio natus eum quos laborum,
-        illum maiores veniam id! Rem illum adipisci aspernatur velit!
+        ©Echipa artistica
+        <br />©Programatorii weebi
+        <br />©Cultura internetului
       </p>
     </div>
     <router-link id="back-btn" class="btn" to="/">Back</router-link>
