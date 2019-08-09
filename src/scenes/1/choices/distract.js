@@ -12,21 +12,30 @@ export default [
     if: ['distract'],
     sfx: 'stop',
     speaker: 'You',
+    text: 'i`ll make you an offer you can`t refuse',
     choices: [
       {
         text: 'i`ll make you an offer you can`t refuse',
         flags: [
           'offer',
           {
-            flag: 'offer-success',
-            chance: 1,
+            flag: 'iftheygetshot',
+            chance: 0.5,
           },
         ],
       },
+
       {
         text: '...if you like pina colladas',
-        flags: 'collabs',
+        flags: [
+          'collabs',
+          {
+            flag: 'iftheygetshot',
+            chance: 0.5,
+          },
+        ],
       },
+
       {
         text: 'what is love?',
         flags: [
@@ -39,46 +48,32 @@ export default [
       },
     ],
   },
+
   {
-    if: ['offer-success'],
-    choices: [
-      {
-        text: 'Next',
-        flags: [
-          'offer',
-          {
-            flag: 'iftheygetshot',
-            chance: 0.5,
-          },
-        ],
-      },
-    ],
+    if: ['offer'],
     sfx: sfx.offer,
+    dialogue: '(salamandr sees you)',
     encounters: [chr.salamandrCurious],
   },
+
   {
     if: ['collabs'],
     sfx: sfx.pinacollada,
+    dialogue: '(salamandr sees you)',
     encounters: [chr.salamandrCurious],
-    dialogue: 'fndfjdsljfdsj',
-    choices: [
-      {
-        text: 'Next',
-        flags: [
-          'offer',
-          {
-            flag: 'iftheygetshot',
-            chance: 0.5,
-          },
-        ],
-      },
-    ],
   },
+
   {
+    if: ['wil?'],
+    sfx: sfx.love,
+    dialogue: '(salamandr sees you)',
     encounters: [chr.salamandrCurious],
   },
+
   {
     if: ['iftheygetshot'],
-    dialogue: '4123432423432',
+    dialogue: '(both die)',
+    squad: [chr.englsWounded],
+    encounters: [chr.salamandrDead],
   },
 ];
