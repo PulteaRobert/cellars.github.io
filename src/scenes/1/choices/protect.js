@@ -17,11 +17,11 @@ export default [
       },
       {
         text: 'grab a brush and put a little makeup',
-        flags: 'protect23',
+        flags: ['protect2', 'protect23'],
       },
       {
-        text: 'stop right there you criminal scum!',
-        flags: 'protect23',
+        text: 'yell "Stop right there you criminal scum!"',
+        flags: ['protect3', 'protect23'],
       },
     ],
   },
@@ -29,8 +29,8 @@ export default [
     if: ['protect1', 'protect1-success'],
     encounters: [chr.salamandrDead],
     squad: [chr.engls],
-    speaker: 'Narrator',
-    dialogue: 'You lucky frog....',
+    speaker: '',
+    dialogue: 'You lucky frog..',
     sfx: sfx.villagerDeath,
     jumpto: '3',
   },
@@ -48,9 +48,31 @@ export default [
     jumpto: '2',
   },
   {
+    if: ['protect2'],
+    speaker: '',
+    dialogue: '....',
+  },
+  {
+    if: ['protect2'],
+    speaker: '',
+    dialogue: '......',
+  },
+
+  {
+    if: ['protect2'],
+    speaker: '',
+    dialogue: 'You put on makeup.',
+  },
+  {
+    if: ['protect3'],
+    sfx: sfx.criminal,
+    speaker: 'You',
+    dialogue: 'Stop right there you criminal scum!',
+  },
+  {
     if: ['protect23'],
     sfx: sfx.Criminal,
-    speaker: 'Narrator',
+    speaker: '',
     squad: [chr.englsPrisoner],
     dialogue: 'Your foolish attempt led to one thing... Being imprisoned',
     jumpto: '2',
