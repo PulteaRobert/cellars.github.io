@@ -50,6 +50,13 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  font-size: 5vh;
+}
+
+p {
+  font-size: 2.5vh;
+}
 .controls {
   width: 35vw;
 
