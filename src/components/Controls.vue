@@ -84,6 +84,7 @@ export default {
 
 .next-btn:active,
 .next-btn:focus {
+  transform: translate(1vh, 1vh);
   text-shadow: none;
 }
 
@@ -103,11 +104,12 @@ export default {
 }
 
 .choice-btn:hover {
-  font-kerning: 2px;
+  letter-spacing: -1px;
 }
 
 .choice-btn:active,
 .choice-btn:focus {
+  transform: translate(1vh, 1vh);
   text-shadow: none;
 }
 
