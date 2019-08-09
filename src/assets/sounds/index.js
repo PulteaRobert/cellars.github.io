@@ -28,7 +28,8 @@ import sfxMakeUp from './sfxMakeUp.mp3';
 /* export */ const villagerDeath = sfxVillagerDeath;
 /* export */ const zoinks = sfxZoinks;
 /* export */ const criminal = sfxCriminal;
-/* export */ const makeUp = sfxMakeUp;
+/* export */ const makeup = sfxMakeUp;
+
 export default {
   fool,
   sax,
@@ -42,5 +43,5 @@ export default {
   villagerDeath,
   zoinks,
   criminal,
-  makeUp,
+  makeup,
 };

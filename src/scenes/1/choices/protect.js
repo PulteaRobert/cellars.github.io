@@ -29,7 +29,7 @@ export default [
     if: ['protect1', 'protect1-success'],
     encounters: [chr.salamandrDead],
     squad: [chr.engls],
-    speaker: '',
+    speaker: 'You',
     dialogue: 'You lucky frog..',
     sfx: sfx.villagerDeath,
     jumpto: '3',
@@ -69,7 +69,7 @@ export default [
     if: ['protect2'],
     speaker: '',
     dialogue: 'You put on makeup.',
-    sfx: sfx.makeUp,
+    sfx: sfx.makeup,
   },
   {
     if: ['protect23'],
