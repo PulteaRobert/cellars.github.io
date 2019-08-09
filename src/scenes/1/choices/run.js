@@ -20,7 +20,7 @@ export default [
     squad: [chr.englsCornered],
     encounters: [],
     speaker: 'Mr. Engls',
-    dialogue: "Phew... look's like I lost him... I can see the settlement already",
+    dialogue: 'Phew... looks like I lost him... I can see the settlement already',
   },
   {
     if: ['run', 'run-success'],
