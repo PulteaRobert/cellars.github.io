@@ -116,13 +116,27 @@ export default {
 @media (max-aspect-ratio: 11/7) {
   .controls {
     width: auto;
-    height: 70vh;
+  }
+}
+
+@media (max-aspect-ratio: 6/7) {
+  .controls {
     overflow-y: scroll;
     overflow-x: hidden;
+    height: 70vh;
   }
 
   .dialogue {
     flex-grow: 1;
+  }
+}
+
+@media (min-aspect-ratio: 6/7) and (max-aspect-ratio: 11/7) {
+  .controls {
+    height: 45vh;
+  }
+  .dialogue {
+    flex-grow: 2;
   }
 }
 </style>

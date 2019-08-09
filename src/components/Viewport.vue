@@ -74,7 +74,12 @@ export default {
 @media (max-aspect-ratio: 11/7) {
   .viewport {
     width: auto;
-    height: 50vh;
+  }
+}
+
+@media (min-aspect-ratio: 6/7) {
+  .viewport {
+    height: 100%;
   }
 }
 
