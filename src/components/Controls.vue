@@ -116,7 +116,9 @@ export default {
 @media (max-aspect-ratio: 11/7) {
   .controls {
     width: auto;
-    height: 50vh;
+    height: 70vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   .dialogue {
