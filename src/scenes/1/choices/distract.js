@@ -29,7 +29,13 @@ export default [
       },
       {
         text: 'what is love?',
-        flags: 'wil?',
+        flags: [
+          'wil?',
+          {
+            flag: 'iftheygetshot',
+            chance: 0.5,
+          },
+        ],
       },
     ],
   },
@@ -69,20 +75,6 @@ export default [
     ],
   },
   {
-    if: ['wil?'],
-    choices: [
-      {
-        text: 'Next',
-        flags: [
-          'offer',
-          {
-            flag: 'iftheygetshot',
-            chance: 0.5,
-          },
-        ],
-      },
-    ],
-    sfx: sfx.love,
     encounters: [chr.salamandrCurious],
   },
   {
