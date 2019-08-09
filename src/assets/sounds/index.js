@@ -12,6 +12,7 @@ import sfxPinacollada from './sfxPinacollada.mp3';
 import sfxOffer from './sfxOffer.mp3';
 import sfxVillagerDeath from './sfxVillagerDeath.mp3';
 import sfxZoinks from './sfxZoinks.mp3';
+import sfxMakeUp from './sfxMakeUp.mp3';
 
 /* export */ const fool = sfxFool;
 /* export */ const sax = sfxSax;
@@ -27,7 +28,7 @@ import sfxZoinks from './sfxZoinks.mp3';
 /* export */ const villagerDeath = sfxVillagerDeath;
 /* export */ const zoinks = sfxZoinks;
 /* export */ const criminal = sfxCriminal;
-
+/* export */ const makeUp = sfxMakeUp;
 export default {
   fool,
   sax,
@@ -41,4 +42,5 @@ export default {
   villagerDeath,
   zoinks,
   criminal,
+  makeUp,
 };

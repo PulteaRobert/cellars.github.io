@@ -62,6 +62,7 @@ export default [
     if: ['protect2'],
     speaker: '',
     dialogue: 'You put on makeup.',
+    sfx: sfx.makeUp,
   },
   {
     if: ['protect3'],
