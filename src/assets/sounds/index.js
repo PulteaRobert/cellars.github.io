@@ -10,6 +10,7 @@ import sfxViolinAirhorn from './sfxViolinAirhorn.mp3';
 import sfxLove from './sfxLove.mp3';
 import sfxPinacollada from './sfxPinacollada.mp3';
 import sfxOffer from './sfxOffer.mp3';
+import sfxCriminal from './sfxCriminal.mp3';
 
 /* export */ const fool = sfxFool;
 /* export */ const sax = sfxSax;
@@ -22,6 +23,8 @@ import sfxOffer from './sfxOffer.mp3';
 /* export */ const love = sfxLove;
 /* export */ const pinacollada = sfxPinacollada;
 /* export */ const offer = sfxOffer;
+/* export */ const criminal = sfxCriminal;
+
 
 export default {
   fool,
@@ -33,4 +36,5 @@ export default {
   love,
   pinacollada,
   offer,
+  criminal,
 };
