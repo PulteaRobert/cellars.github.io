@@ -43,6 +43,7 @@ export default [
   {
     if: ['protect1', '!protect1-success'],
     sfx: sfx.fool,
+    speaker: 'Salamandr',
     dialogue:
       'you fool. you absolute buffoon. you think you can challenge me in my own realm? you think you can rebel against my authority? you dare come into my house and upturn my dining chairs and spill coffee grounds in my Keurig? you thought you were safe in your chain mail armor behind that screen of yours. I will take these laminate wood floor boards and destroy you. I didn’t want war. but i didn’t start it.',
     jumpto: '2',
