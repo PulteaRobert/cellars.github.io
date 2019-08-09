@@ -51,6 +51,8 @@ export default new Vuex.Store({
         }
 
         state.game.choices.length = 0;
+        state.game.speaker = '';
+        state.game.dialogue = '';
       }
 
       if (state.game.jumpto) {
