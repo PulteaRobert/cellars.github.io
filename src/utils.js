@@ -47,8 +47,8 @@ export default {
       scene: `${scene}`,
       encounters: [],
       squad: [],
-      speaker: `INTERMISSION`,
-      dialogue: '',
+      speaker: `TO BE\nCONTINUED`,
+      dialogue: '(game is not done yet)',
       image: bgs.black,
       color: { r: 0, g: 0, b: 0 },
     };
