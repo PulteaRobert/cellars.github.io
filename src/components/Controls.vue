@@ -84,7 +84,9 @@ export default {
 
 .next-btn:active,
 .next-btn:focus {
-  transform: translate(1vh, 1vh);
+  position: relative;
+  margin-left: 1vh;
+  bottom: -1vh;
   text-shadow: none;
 }
 
@@ -116,13 +118,32 @@ export default {
 @media (max-aspect-ratio: 11/7) {
   .controls {
     width: auto;
-    height: 70vh;
+  }
+}
+
+@media (max-aspect-ratio: 6/7) {
+  .controls {
     overflow-y: scroll;
     overflow-x: hidden;
+    height: 70vh;
   }
 
   .dialogue {
     flex-grow: 1;
+  }
+}
+
+@media (min-aspect-ratio: 6/7) and (max-aspect-ratio: 11/7) {
+  .controls {
+    height: 45vh;
+    flex-direction: row;
+  }
+  .dialogue {
+    flex-grow: 2;
+  }
+
+  .choices {
+    margin-top: 0;
   }
 }
 </style>
