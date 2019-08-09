@@ -11,10 +11,10 @@
           v-for="(choice, i) in choices"
           :key="choice.text"
           :style="`color:${textColor}`"
-          @click.prevent="click(i)"
+          @click="click(i)"
         >&gt;&nbsp;{{ choice.text }}</a>
       </div>
-      <a v-else class="next-btn" @click.prevent="click(null)" :style="`color:${textColor}`">NEXT</a>
+      <a v-else class="next-btn" @click="click(null)" :style="`color:${textColor}`">NEXT</a>
     </div>
   </div>
 </template>
