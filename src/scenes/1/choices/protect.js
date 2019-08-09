@@ -15,7 +15,8 @@ export default [
           },
           'protecc23',
           {
-            flag: 'protecc23',
+            flag: 'protecc23-succes',
+            chance: 0.5,
           },
         ],
       },
@@ -40,5 +41,10 @@ export default [
     if: ['protecc1', '!protecc1-succes'],
     sfx: sfx.fool,
     dialogue: 'you fool. you absolute buffoon. you think you can challenge me in my own realm? you think you can rebel against my authority? you dare come into my house and upturn my dining chairs and spill coffee grounds in my Keurig? you thought you were safe in your chain mail armor behind that screen of yours. I will take these laminate wood floor boards and destroy you. I didn’t want war. but i didn’t start it.',
+  },
+  {
+    if: ['protecc23', 'protecc23-succes'],
+    sfx: sfx.fool,
+    dialogue: '',
   },
 ];
